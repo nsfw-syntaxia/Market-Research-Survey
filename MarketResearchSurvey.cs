@@ -1,10 +1,12 @@
 using System;
 
-namespace W3LabActivity_Dolera
+namespace MRS_Dolera
 {
-    public partial class MarketResearchSurvey : Form
+    public partial class MRS_Dolera : Form
     {
-        public MarketResearchSurvey()
+        private string fvp = "None";
+
+        public MRS_Dolera()
         {
             InitializeComponent();
         }
@@ -20,6 +22,8 @@ namespace W3LabActivity_Dolera
             string education, freqExercise, freqUse, lastBuy, waterResistance, cooling;
             string antibac, antiodor, material, elasticity, endurance;
             string whyBuy = "", whereBuy = "", design = "", influence = "";
+
+            string email = tbxEmail.Text;
 
             if (rbtnMale.Checked)
             {
@@ -185,84 +189,84 @@ namespace W3LabActivity_Dolera
 
             if (rbtnEXFREQ1.Checked)
             {
-                freqExercise = rbtnEXFREQ1.Text;
+                freqExercise = "1";
             }
             else if (rbtnEXFREQ2.Checked)
             {
-                freqExercise = rbtnEXFREQ2.Text;
+                freqExercise = "2";
             }
             else if (rbtnEXFREQ3.Checked)
             {
-                freqExercise = rbtnEXFREQ3.Text;
+                freqExercise = "3";
             }
             else if (rbtnEXFREQ4.Checked)
             {
-                freqExercise = rbtnEXFREQ4.Text;
+                freqExercise = "4";
             }
             else if (rbtnEXFREQ5.Checked)
             {
-                freqExercise = rbtnEXFREQ5.Text;
+                freqExercise = "5";
             }
             else if (rbtnEXFREQ6.Checked)
             {
-                freqExercise = rbtnEXFREQ6.Text;
+                freqExercise = "6";
             }
             else if (rbtnEXFREQ7.Checked)
             {
-                freqExercise = rbtnEXFREQ7.Text;
+                freqExercise = "7";
             }
             else if (rbtnEXFREQ8.Checked)
             {
-                freqExercise = rbtnEXFREQ8.Text;
+                freqExercise = "8";
             }
             else if (rbtnEXFREQ9.Checked)
             {
-                freqExercise = rbtnEXFREQ9.Text;
+                freqExercise = "9";
             }
             else
             {
-                freqExercise = rbtnEXFREQ10.Text;
+                freqExercise = "10";
             }
 
             if (rbtnUFREQ1.Checked)
             {
-                freqUse = rbtnUFREQ1.Text;
+                freqUse = "1";
             }
             else if (rbtnUFREQ2.Checked)
             {
-                freqUse = rbtnUFREQ2.Text;
+                freqUse = "2";
             }
             else if (rbtnUFREQ3.Checked)
             {
-                freqUse = rbtnUFREQ3.Text;
+                freqUse = "3";
             }
             else if (rbtnUFREQ4.Checked)
             {
-                freqUse = rbtnUFREQ4.Text;
+                freqUse = "4";
             }
             else if (rbtnUFREQ5.Checked)
             {
-                freqUse = rbtnUFREQ5.Text;
+                freqUse = "5";
             }
             else if (rbtnUFREQ6.Checked)
             {
-                freqUse = rbtnUFREQ6.Text;
+                freqUse = "6";
             }
             else if (rbtnUFREQ7.Checked)
             {
-                freqUse = rbtnUFREQ7.Text;
+                freqUse = "7";
             }
             else if (rbtnUFREQ8.Checked)
             {
-                freqUse = rbtnUFREQ8.Text;
+                freqUse = "8";
             }
             else if (rbtnUFREQ9.Checked)
             {
-                freqUse = rbtnUFREQ9.Text;
+                freqUse = "9";
             }
             else
             {
-                freqUse = rbtnUFREQ10.Text;
+                freqUse = "10";
             }
 
             if (rbtnLTAM.Checked)
@@ -372,179 +376,179 @@ namespace W3LabActivity_Dolera
 
             if (rbtnWR1.Checked)
             {
-                waterResistance = rbtnWR1.Text;
+                waterResistance = "1";
             }
             else if (rbtnWR2.Checked)
             {
-                waterResistance = rbtnWR2.Text;
+                waterResistance = "2";
             }
             else if (rbtnWR3.Checked)
             {
-                waterResistance = rbtnWR3.Text;
+                waterResistance = "3";
             }
             else if (rbtnWR4.Checked)
             {
-                waterResistance = rbtnWR4.Text;
+                waterResistance = "4";
             }
             else
             {
-                waterResistance = rbtnWR5.Text;
+                waterResistance = "5";
             }
 
             if (rbtnC1.Checked)
             {
-                cooling = rbtnC1.Text;
+                cooling = "1";
             }
             else if (rbtnC2.Checked)
             {
-                cooling = rbtnC2.Text;
+                cooling = "2";
             }
             else if (rbtnC3.Checked)
             {
-                cooling = rbtnC3.Text;
+                cooling = "3";
             }
             else if (rbtnC4.Checked)
             {
-                cooling = rbtnC4.Text;
+                cooling = "4";
             }
             else
             {
-                cooling = rbtnC5.Text;
+                cooling = "5";
             }
 
             if (rbtnAB1.Checked)
             {
-                antibac = rbtnAB1.Text;
+                antibac = "1";
             }
             else if (rbtnAB2.Checked)
             {
-                antibac = rbtnAB2.Text;
+                antibac = "2";
             }
             else if (rbtnAB3.Checked)
             {
-                antibac = rbtnAB3.Text;
+                antibac = "3";
             }
             else if (rbtnAB4.Checked)
             {
-                antibac = rbtnAB4.Text;
+                antibac = "4";
             }
             else
             {
-                antibac = rbtnAB5.Text;
+                antibac = "5";
             }
 
             if (rbtnAO1.Checked)
             {
-                antiodor = rbtnAO1.Text;
+                antiodor = "1";
             }
             else if (rbtnAO2.Checked)
             {
-                antiodor = rbtnAO2.Text;
+                antiodor = "2";
             }
             else if (rbtnAO3.Checked)
             {
-                antiodor = rbtnAO3.Text;
+                antiodor = "3";
             }
             else if (rbtnAO4.Checked)
             {
-                antiodor = rbtnAO4.Text;
+                antiodor = "4";
             }
             else
             {
-                antiodor = rbtnAO5.Text;
+                antiodor = "5";
             }
 
             if (rbtnSSM1.Checked)
             {
-                material = rbtnSSM1.Text;
+                material = "1";
             }
             else if (rbtnSSM2.Checked)
             {
-                material = rbtnSSM2.Text;
+                material = "2";
             }
             else if (rbtnSSM3.Checked)
             {
-                material = rbtnSSM3.Text;
+                material = "3";
             }
             else if (rbtnSSM4.Checked)
             {
-                material = rbtnSSM4.Text;
+                material = "4";
             }
             else
             {
-                material = rbtnSSM5.Text;
+                material = "5";
             }
 
             if (rbtnE1.Checked)
             {
-                elasticity = rbtnE1.Text;
+                elasticity = "1";
             }
             else if (rbtnE2.Checked)
             {
-                elasticity = rbtnE2.Text;
+                elasticity = "2";
             }
             else if (rbtnE3.Checked)
             {
-                elasticity = rbtnE3.Text;
+                elasticity = "3";
             }
             else if (rbtnE4.Checked)
             {
-                elasticity = rbtnE4.Text;
+                elasticity = "4";
             }
             else
             {
-                elasticity = rbtnE5.Text;
+                elasticity = "5";
             }
 
             if (rbtnED1.Checked)
             {
-                endurance = rbtnED1.Text;
+                endurance = "1";
             }
             else if (rbtnED2.Checked)
             {
-                endurance = rbtnED2.Text;
+                endurance = "2";
             }
             else if (rbtnED3.Checked)
             {
-                endurance = rbtnED3.Text;
+                endurance = "3";
             }
             else if (rbtnED4.Checked)
             {
-                endurance = rbtnED4.Text;
+                endurance = "4";
             }
             else
             {
-                endurance = rbtnED5.Text;
+                endurance = "5";
             }
 
             string summary = $"Gender: {gender}\n" +
-                     $"Age Range: {ageRange}\n" +
-                     $"Marital Status: {maritalStatus}\n" +
-                     $"Income Range: {incomeRange}\n" +
-                     $"Employment Status: {employmentStatus}\n" +
-                     $"Education: {education}\n" +
-                     $"Frequency of Exercise: {freqExercise}\n" +
-                     $"Frequency of Product Use: {freqUse}\n" +
-                     $"Last Purchase: {lastBuy}\n" +
-                     $"Water Resistance: {waterResistance}\n" +
-                     $"Cooling: {cooling}\n" +
-                     $"Antibacterial: {antibac}\n" +
-                     $"Anti-odor: {antiodor}\n" +
-                     $"Material: {material}\n" +
-                     $"Elasticity: {elasticity}\n" +
-                     $"Endurance: {endurance}\n" +
-                     $"Why Purchase: {whyBuy}\n" +
-                     $"Where Purchase: {whereBuy}\n" +
-                     $"Design: {design}\n" +
-                     $"Influence: {influence}";
+                             $"Age Range: {ageRange}\n" +
+                             $"Marital Status: {maritalStatus}\n" +
+                             $"Income Range: {incomeRange}\n" +
+                             $"Employment Status: {employmentStatus}\n" +
+                             $"Education: {education}\n\n" +
+                             $"Frequency of Exercise: {freqExercise}\n" +
+                             $"Frequency of Product Use: {freqUse}\n\n" +
+                             $"Last Purchase: {lastBuy}\n" +
+                             $"Purpose/s of Purchase: {whyBuy}\n" +
+                             $"Place/s to Purchase: {whereBuy}\n" +
+                             $"Preferred Design/s: {design}\n" +
+                             $"Influence/s: {influence}\n\n" +
+                             $"Water Resistance: {waterResistance}\n" +
+                             $"Cooling: {cooling}\n" +
+                             $"Antibacterial: {antibac}\n" +
+                             $"Anti-odor: {antiodor}\n" +
+                             $"Material: {material}\n" +
+                             $"Elasticity: {elasticity}\n" +
+                             $"Endurance: {endurance}\n\n" +
+                             $"Sports Brand Personification: {fvp}\n" +
+                             $"Email Address: {email}";
 
             MessageBox.Show($"Successfully submitted!\n\n{summary}", "Submission Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void cbxfvp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string fvp;
-
             fvp = cbxfvp.SelectedItem?.ToString() ?? "None";
         }
 
