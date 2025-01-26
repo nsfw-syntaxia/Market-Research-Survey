@@ -1,4 +1,4 @@
-﻿namespace MRS_Dolera
+namespace MRS_Dolera
 {
     partial class MRS_Dolera
     {
@@ -131,7 +131,7 @@
             label82 = new Label();
             cbxfvp = new ComboBox();
             label83 = new Label();
-            textBox1 = new TextBox();
+            tbxEmail = new TextBox();
             label84 = new Label();
             groupBox2 = new GroupBox();
             rbtnFemale = new RadioButton();
@@ -240,13 +240,13 @@
             groupBox13 = new GroupBox();
             groupBox1 = new GroupBox();
             groupBox18 = new GroupBox();
-            groupBox17 = new GroupBox();
-            groupBox19 = new GroupBox();
-            groupBox20 = new GroupBox();
-            groupBox21 = new GroupBox();
-            groupBox22 = new GroupBox();
-            groupBox23 = new GroupBox();
             groupBox24 = new GroupBox();
+            groupBox22 = new GroupBox();
+            groupBox21 = new GroupBox();
+            groupBox23 = new GroupBox();
+            groupBox20 = new GroupBox();
+            groupBox19 = new GroupBox();
+            groupBox17 = new GroupBox();
             groupBox11.SuspendLayout();
             groupBox12.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -262,13 +262,13 @@
             groupBox13.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox18.SuspendLayout();
-            groupBox17.SuspendLayout();
-            groupBox19.SuspendLayout();
-            groupBox20.SuspendLayout();
-            groupBox21.SuspendLayout();
-            groupBox22.SuspendLayout();
-            groupBox23.SuspendLayout();
             groupBox24.SuspendLayout();
+            groupBox22.SuspendLayout();
+            groupBox21.SuspendLayout();
+            groupBox23.SuspendLayout();
+            groupBox20.SuspendLayout();
+            groupBox19.SuspendLayout();
+            groupBox17.SuspendLayout();
             SuspendLayout();
             // 
             // panel
@@ -1315,13 +1315,13 @@
             label83.TabIndex = 246;
             label83.Text = "Please share your email address.";
             // 
-            // textBox1
+            // tbxEmail
             // 
-            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(11, 1725);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(579, 26);
-            textBox1.TabIndex = 247;
+            tbxEmail.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbxEmail.Location = new Point(11, 1725);
+            tbxEmail.Name = "tbxEmail";
+            tbxEmail.Size = new Size(579, 26);
+            tbxEmail.TabIndex = 247;
             // 
             // label84
             // 
@@ -2567,7 +2567,7 @@
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label84);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(tbxEmail);
             groupBox1.Controls.Add(label83);
             groupBox1.Controls.Add(cbxfvp);
             groupBox1.Controls.Add(label82);
@@ -2612,89 +2612,26 @@
             groupBox18.TabStop = false;
             groupBox18.Text = "Please rate your preferences regarding the materials used in sportswear.";
             // 
-            // groupBox17
+            // groupBox24
             // 
-            groupBox17.Controls.Add(rbtnWR1);
-            groupBox17.Controls.Add(label55);
-            groupBox17.Controls.Add(rbtnWR2);
-            groupBox17.Controls.Add(label56);
-            groupBox17.Controls.Add(label54);
-            groupBox17.Controls.Add(rbtnWR3);
-            groupBox17.Controls.Add(rbtnWR5);
-            groupBox17.Controls.Add(label52);
-            groupBox17.Controls.Add(label53);
-            groupBox17.Controls.Add(rbtnWR4);
-            groupBox17.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox17.ForeColor = Color.DarkSlateGray;
-            groupBox17.Location = new Point(9, 32);
-            groupBox17.Name = "groupBox17";
-            groupBox17.Size = new Size(140, 71);
-            groupBox17.TabIndex = 47;
-            groupBox17.TabStop = false;
-            groupBox17.Text = "Water Resistance";
-            // 
-            // groupBox19
-            // 
-            groupBox19.Controls.Add(rbtnC2);
-            groupBox19.Controls.Add(rbtnC1);
-            groupBox19.Controls.Add(label39);
-            groupBox19.Controls.Add(label40);
-            groupBox19.Controls.Add(label41);
-            groupBox19.Controls.Add(rbtnC3);
-            groupBox19.Controls.Add(label42);
-            groupBox19.Controls.Add(label43);
-            groupBox19.Controls.Add(rbtnC4);
-            groupBox19.Controls.Add(rbtnC5);
-            groupBox19.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox19.ForeColor = Color.DarkSlateGray;
-            groupBox19.Location = new Point(155, 32);
-            groupBox19.Name = "groupBox19";
-            groupBox19.Size = new Size(130, 71);
-            groupBox19.TabIndex = 48;
-            groupBox19.TabStop = false;
-            groupBox19.Text = "Cooling";
-            // 
-            // groupBox20
-            // 
-            groupBox20.Controls.Add(rbtnAB1);
-            groupBox20.Controls.Add(rbtnAB2);
-            groupBox20.Controls.Add(label45);
-            groupBox20.Controls.Add(label46);
-            groupBox20.Controls.Add(rbtnAB3);
-            groupBox20.Controls.Add(label47);
-            groupBox20.Controls.Add(label48);
-            groupBox20.Controls.Add(rbtnAB4);
-            groupBox20.Controls.Add(label49);
-            groupBox20.Controls.Add(rbtnAB5);
-            groupBox20.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox20.ForeColor = Color.DarkSlateGray;
-            groupBox20.Location = new Point(291, 32);
-            groupBox20.Name = "groupBox20";
-            groupBox20.Size = new Size(129, 71);
-            groupBox20.TabIndex = 49;
-            groupBox20.TabStop = false;
-            groupBox20.Text = "Anti-Bacteria";
-            // 
-            // groupBox21
-            // 
-            groupBox21.Controls.Add(rbtnE2);
-            groupBox21.Controls.Add(rbtnE1);
-            groupBox21.Controls.Add(rbtnE3);
-            groupBox21.Controls.Add(rbtnE4);
-            groupBox21.Controls.Add(rbtnE5);
-            groupBox21.Controls.Add(label74);
-            groupBox21.Controls.Add(label73);
-            groupBox21.Controls.Add(label72);
-            groupBox21.Controls.Add(label71);
-            groupBox21.Controls.Add(label70);
-            groupBox21.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox21.ForeColor = Color.DarkSlateGray;
-            groupBox21.Location = new Point(256, 109);
-            groupBox21.Name = "groupBox21";
-            groupBox21.Size = new Size(140, 71);
-            groupBox21.TabIndex = 50;
-            groupBox21.TabStop = false;
-            groupBox21.Text = "Elasticity";
+            groupBox24.Controls.Add(rbtnED1);
+            groupBox24.Controls.Add(rbtnED2);
+            groupBox24.Controls.Add(rbtnED3);
+            groupBox24.Controls.Add(rbtnED4);
+            groupBox24.Controls.Add(rbtnED5);
+            groupBox24.Controls.Add(label80);
+            groupBox24.Controls.Add(label79);
+            groupBox24.Controls.Add(label78);
+            groupBox24.Controls.Add(label77);
+            groupBox24.Controls.Add(label76);
+            groupBox24.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox24.ForeColor = Color.DarkSlateGray;
+            groupBox24.Location = new Point(402, 109);
+            groupBox24.Name = "groupBox24";
+            groupBox24.Size = new Size(173, 71);
+            groupBox24.TabIndex = 51;
+            groupBox24.TabStop = false;
+            groupBox24.Text = "Endurance";
             // 
             // groupBox22
             // 
@@ -2717,6 +2654,27 @@
             groupBox22.TabStop = false;
             groupBox22.Text = "Soft and Smooth Material";
             // 
+            // groupBox21
+            // 
+            groupBox21.Controls.Add(rbtnE2);
+            groupBox21.Controls.Add(rbtnE1);
+            groupBox21.Controls.Add(rbtnE3);
+            groupBox21.Controls.Add(rbtnE4);
+            groupBox21.Controls.Add(rbtnE5);
+            groupBox21.Controls.Add(label74);
+            groupBox21.Controls.Add(label73);
+            groupBox21.Controls.Add(label72);
+            groupBox21.Controls.Add(label71);
+            groupBox21.Controls.Add(label70);
+            groupBox21.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox21.ForeColor = Color.DarkSlateGray;
+            groupBox21.Location = new Point(256, 109);
+            groupBox21.Name = "groupBox21";
+            groupBox21.Size = new Size(140, 71);
+            groupBox21.TabIndex = 50;
+            groupBox21.TabStop = false;
+            groupBox21.Text = "Elasticity";
+            // 
             // groupBox23
             // 
             groupBox23.Controls.Add(label59);
@@ -2738,28 +2696,70 @@
             groupBox23.TabStop = false;
             groupBox23.Text = "Anti-Odour";
             // 
-            // groupBox24
+            // groupBox20
             // 
-            groupBox24.Controls.Add(rbtnED1);
-            groupBox24.Controls.Add(rbtnED2);
-            groupBox24.Controls.Add(rbtnED3);
-            groupBox24.Controls.Add(rbtnED4);
-            groupBox24.Controls.Add(rbtnED5);
-            groupBox24.Controls.Add(label80);
-            groupBox24.Controls.Add(label79);
-            groupBox24.Controls.Add(label78);
-            groupBox24.Controls.Add(label77);
-            groupBox24.Controls.Add(label76);
-            groupBox24.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox24.ForeColor = Color.DarkSlateGray;
-            groupBox24.Location = new Point(402, 109);
-            groupBox24.Name = "groupBox24";
-            groupBox24.Size = new Size(173, 71);
-            groupBox24.TabIndex = 51;
-            groupBox24.TabStop = false;
-            groupBox24.Text = "Endurance";
+            groupBox20.Controls.Add(rbtnAB1);
+            groupBox20.Controls.Add(rbtnAB2);
+            groupBox20.Controls.Add(label45);
+            groupBox20.Controls.Add(label46);
+            groupBox20.Controls.Add(rbtnAB3);
+            groupBox20.Controls.Add(label47);
+            groupBox20.Controls.Add(label48);
+            groupBox20.Controls.Add(rbtnAB4);
+            groupBox20.Controls.Add(label49);
+            groupBox20.Controls.Add(rbtnAB5);
+            groupBox20.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox20.ForeColor = Color.DarkSlateGray;
+            groupBox20.Location = new Point(291, 32);
+            groupBox20.Name = "groupBox20";
+            groupBox20.Size = new Size(129, 71);
+            groupBox20.TabIndex = 49;
+            groupBox20.TabStop = false;
+            groupBox20.Text = "Anti-Bacteria";
             // 
-            // W3LabActivity
+            // groupBox19
+            // 
+            groupBox19.Controls.Add(rbtnC2);
+            groupBox19.Controls.Add(rbtnC1);
+            groupBox19.Controls.Add(label39);
+            groupBox19.Controls.Add(label40);
+            groupBox19.Controls.Add(label41);
+            groupBox19.Controls.Add(rbtnC3);
+            groupBox19.Controls.Add(label42);
+            groupBox19.Controls.Add(label43);
+            groupBox19.Controls.Add(rbtnC4);
+            groupBox19.Controls.Add(rbtnC5);
+            groupBox19.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox19.ForeColor = Color.DarkSlateGray;
+            groupBox19.Location = new Point(155, 32);
+            groupBox19.Name = "groupBox19";
+            groupBox19.Size = new Size(130, 71);
+            groupBox19.TabIndex = 48;
+            groupBox19.TabStop = false;
+            groupBox19.Text = "Cooling";
+            // 
+            // groupBox17
+            // 
+            groupBox17.Controls.Add(rbtnWR1);
+            groupBox17.Controls.Add(label55);
+            groupBox17.Controls.Add(rbtnWR2);
+            groupBox17.Controls.Add(label56);
+            groupBox17.Controls.Add(label54);
+            groupBox17.Controls.Add(rbtnWR3);
+            groupBox17.Controls.Add(rbtnWR5);
+            groupBox17.Controls.Add(label52);
+            groupBox17.Controls.Add(label53);
+            groupBox17.Controls.Add(rbtnWR4);
+            groupBox17.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox17.ForeColor = Color.DarkSlateGray;
+            groupBox17.Location = new Point(9, 32);
+            groupBox17.Name = "groupBox17";
+            groupBox17.Size = new Size(140, 71);
+            groupBox17.TabIndex = 47;
+            groupBox17.TabStop = false;
+            groupBox17.Text = "Water Resistance";
+            // 
+            // MRS_Dolera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -2768,7 +2768,7 @@
             ClientSize = new Size(647, 1061);
             Controls.Add(panel);
             Controls.Add(groupBox1);
-            Name = "W3LabActivity";
+            Name = "MRS_Dolera";
             Text = "Market Research Survey";
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
@@ -2799,20 +2799,20 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox18.ResumeLayout(false);
-            groupBox17.ResumeLayout(false);
-            groupBox17.PerformLayout();
-            groupBox19.ResumeLayout(false);
-            groupBox19.PerformLayout();
-            groupBox20.ResumeLayout(false);
-            groupBox20.PerformLayout();
-            groupBox21.ResumeLayout(false);
-            groupBox21.PerformLayout();
-            groupBox22.ResumeLayout(false);
-            groupBox22.PerformLayout();
-            groupBox23.ResumeLayout(false);
-            groupBox23.PerformLayout();
             groupBox24.ResumeLayout(false);
             groupBox24.PerformLayout();
+            groupBox22.ResumeLayout(false);
+            groupBox22.PerformLayout();
+            groupBox21.ResumeLayout(false);
+            groupBox21.PerformLayout();
+            groupBox23.ResumeLayout(false);
+            groupBox23.PerformLayout();
+            groupBox20.ResumeLayout(false);
+            groupBox20.PerformLayout();
+            groupBox19.ResumeLayout(false);
+            groupBox19.PerformLayout();
+            groupBox17.ResumeLayout(false);
+            groupBox17.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -2920,7 +2920,7 @@
         private Label label82;
         private ComboBox cbxfvp;
         private Label label83;
-        private TextBox textBox1;
+        private TextBox tbxEmail;
         private Label label84;
         private GroupBox groupBox2;
         private RadioButton rbtnFemale;
