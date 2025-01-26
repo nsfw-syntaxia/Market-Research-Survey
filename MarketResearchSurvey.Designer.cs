@@ -1,6 +1,6 @@
-﻿namespace W3LabActivity_Dolera
+﻿namespace MRS_Dolera
 {
-    partial class MarketResearchSurvey
+    partial class MRS_Dolera
     {
         /// <summary>
         ///  Required designer variable.
