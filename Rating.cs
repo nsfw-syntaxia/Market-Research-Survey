@@ -12,9 +12,21 @@ namespace MarketResearchSurvey
 {
     public partial class Rating : Form
     {
+        private string fvp = "";
+
         public Rating()
         {
             InitializeComponent();
+        }
+
+        private void cbxfvp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fvp = cbxfvp.SelectedItem?.ToString() ?? "Other";
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
