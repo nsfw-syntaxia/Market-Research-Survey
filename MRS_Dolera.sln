@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<<< HEAD:MarketResearchSurvey.sln
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketResearchSurvey", "MarketResearchSurvey.csproj", "{420F1AC9-EFE6-415B-BBF9-8BCC43E416D9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRS_Dolera", "MRS_Dolera.csproj", "{C0B091FE-4B71-4DED-9F5A-5EC606AA168F}"
+========
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRS_Dolera", "MRS_Dolera.csproj", "{420F1AC9-EFE6-415B-BBF9-8BCC43E416D9}"
+>>>>>>>> 706da9bd7c60126aeee107a6329fc41df246e01a:MRS_Dolera.sln
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		{420F1AC9-EFE6-415B-BBF9-8BCC43E416D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{420F1AC9-EFE6-415B-BBF9-8BCC43E416D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{420F1AC9-EFE6-415B-BBF9-8BCC43E416D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0B091FE-4B71-4DED-9F5A-5EC606AA168F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0B091FE-4B71-4DED-9F5A-5EC606AA168F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0B091FE-4B71-4DED-9F5A-5EC606AA168F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0B091FE-4B71-4DED-9F5A-5EC606AA168F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

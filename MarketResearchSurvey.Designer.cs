@@ -1,4 +1,4 @@
-﻿namespace MRS_Dolera
+namespace MRS_Dolera
 {
     partial class MRS_Dolera
     {
@@ -2759,7 +2759,7 @@
             groupBox17.TabStop = false;
             groupBox17.Text = "Water Resistance";
             // 
-            // MarketResearchSurvey
+            // W3LabActivity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
