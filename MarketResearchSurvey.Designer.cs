@@ -1,6 +1,6 @@
-namespace MRS_Dolera
+namespace MarketResearchSurvey
 {
-    partial class MRS_Dolera
+    partial class MarketResearchSurvey
     {
         /// <summary>
         ///  Required designer variable.
@@ -2759,7 +2759,7 @@ namespace MRS_Dolera
             groupBox17.TabStop = false;
             groupBox17.Text = "Water Resistance";
             // 
-            // W3LabActivity
+            // MarketResearchSurvey
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -2769,7 +2769,7 @@ namespace MRS_Dolera
             Controls.Add(panel);
             Controls.Add(groupBox1);
             Name = "MarketResearchSurvey";
-            Text = "Market Research Survey";
+            ShowIcon = false;
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
             groupBox12.ResumeLayout(false);

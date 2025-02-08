@@ -1,4 +1,4 @@
-namespace MRS_Dolera
+namespace MarketResearchSurvey
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace MRS_Dolera
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MRS_Dolera());
+            Application.Run(new MarketResearchSurvey());
         }
     }
 }

@@ -1,12 +1,13 @@
 using System;
+using System.Windows.Forms;
 
-namespace MRS_Dolera
+namespace MarketResearchSurvey
 {
-    public partial class MRS_Dolera : Form
+    public partial class MarketResearchSurvey : Form
     {
         private string fvp = "None";
 
-        public MRS_Dolera()
+        public MarketResearchSurvey()
         {
             InitializeComponent();
         }
