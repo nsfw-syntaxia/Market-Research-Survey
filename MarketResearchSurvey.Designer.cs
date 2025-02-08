@@ -72,11 +72,11 @@
             // 
             // tbxEmail
             // 
-            tbxEmail.Font = new Font("Microsoft Sans Serif", 8.25F);
+            tbxEmail.Font = new Font("Bahnschrift SemiLight", 12.75F);
             tbxEmail.ForeColor = Color.DarkSlateGray;
             tbxEmail.Location = new Point(15, 152);
             tbxEmail.Name = "tbxEmail";
-            tbxEmail.Size = new Size(409, 20);
+            tbxEmail.Size = new Size(409, 28);
             tbxEmail.TabIndex = 4;
             // 
             // tbxName
