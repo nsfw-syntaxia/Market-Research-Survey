@@ -1,4 +1,4 @@
-namespace W3LabActivity_Dolera
+namespace MRS_Dolera
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace W3LabActivity_Dolera
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MarketResearchSurvey());
+            Application.Run(new MRS_Dolera());
         }
     }
 }
