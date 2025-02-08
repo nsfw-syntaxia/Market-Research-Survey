@@ -111,6 +111,8 @@
             lblfvp = new Label();
             cbxfvp = new ComboBox();
             btnSubmit = new Button();
+            label1 = new Label();
+            chlbxfvp = new CheckedListBox();
             grbxWaterR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wrf5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wrf3).BeginInit();
@@ -760,7 +762,7 @@
             // 
             panel1.Location = new Point(465, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(10, 1194);
+            panel1.Size = new Size(10, 1328);
             panel1.TabIndex = 108;
             // 
             // grbxElasticity
@@ -998,12 +1000,13 @@
             // 
             // cbxfvp
             // 
-            cbxfvp.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbxfvp.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            cbxfvp.ForeColor = Color.DarkSlateGray;
             cbxfvp.FormattingEnabled = true;
             cbxfvp.Items.AddRange(new object[] { "Imaginative", "Colorful", "Cheerful", "Daring", "Intelligent", "Tough", "Serious", "Spirited", "Outdoorsy", "Reliable", "Honest", "Funny", "Successful", "Introvert", "Sophisticated", "Classy", "Other" });
             cbxfvp.Location = new Point(12, 1072);
             cbxfvp.Name = "cbxfvp";
-            cbxfvp.Size = new Size(446, 28);
+            cbxfvp.Size = new Size(446, 29);
             cbxfvp.TabIndex = 246;
             cbxfvp.SelectedIndexChanged += cbxfvp_SelectedIndexChanged;
             // 
@@ -1011,13 +1014,37 @@
             // 
             btnSubmit.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSubmit.ForeColor = Color.DarkSlateGray;
-            btnSubmit.Location = new Point(198, 1134);
+            btnSubmit.Location = new Point(198, 1266);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(75, 28);
             btnSubmit.TabIndex = 247;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
             btnSubmit.Click += btnSubmit_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkSlateGray;
+            label1.Location = new Point(12, 1130);
+            label1.Name = "label1";
+            label1.Size = new Size(412, 21);
+            label1.TabIndex = 248;
+            label1.Text = "What are your other interests? (Select all that apply.)\r\n";
+            // 
+            // chlbxfvp
+            // 
+            chlbxfvp.BackColor = Color.LightSteelBlue;
+            chlbxfvp.BorderStyle = BorderStyle.None;
+            chlbxfvp.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chlbxfvp.ForeColor = Color.DarkSlateGray;
+            chlbxfvp.FormattingEnabled = true;
+            chlbxfvp.Items.AddRange(new object[] { "Arts & Entertainment", "Autos & Vehicles", "Beauty & Fitness", "Books & Literature", "Business & Industrial", "Computers & Electronics", "E-Sports", "Finance", "Food & Drink", "Games", "Hobbies & Leisure", "Home & Garden", "Internet & Telecom", "Jobs & Education", "Law & Government", "Motorsports", "News", "Online Communities", "People & Society", "Pets & Animals", "Real Estate", "Reference", "Science", "Shopping", "Travel", "World Localities" });
+            chlbxfvp.Location = new Point(12, 1159);
+            chlbxfvp.Name = "chlbxfvp";
+            chlbxfvp.Size = new Size(446, 69);
+            chlbxfvp.TabIndex = 250;
             // 
             // Rating
             // 
@@ -1026,6 +1053,8 @@
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(487, 836);
+            Controls.Add(chlbxfvp);
+            Controls.Add(label1);
             Controls.Add(btnSubmit);
             Controls.Add(cbxfvp);
             Controls.Add(lblfvp);
@@ -1206,5 +1235,8 @@
         private PictureBox endf4;
         private PictureBox endf1;
         private PictureBox endf2;
+        private ComboBox comboBox1;
+        private Label label1;
+        private CheckedListBox chlbxfvp;
     }
 }

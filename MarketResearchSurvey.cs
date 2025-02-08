@@ -15,8 +15,10 @@ namespace MarketResearchSurvey
             string email = tbxEmail.Text;
             string name = tbxName.Text;
 
+            this.Hide();
             Demographic demographic = new Demographic();
             demographic.ShowDialog();
+            this.Close();
         }
     }
 }

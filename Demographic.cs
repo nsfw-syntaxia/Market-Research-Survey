@@ -187,8 +187,10 @@ namespace MarketResearchSurvey
                 education = rbtnPNTSHEA.Text;
             }
 
+            this.Hide();
             Questionnaire questionnaire = new Questionnaire();
             questionnaire.ShowDialog();
+            this.Close();
         }
     }
 }

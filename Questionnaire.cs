@@ -209,8 +209,10 @@ namespace MarketResearchSurvey
                 influence = influence + " " + chbxOICB.Text;
             }
 
+            this.Hide();
             Rating rating = new Rating();
             rating.ShowDialog();
+            this.Close();
         }
     }
 }
