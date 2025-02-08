@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarketResearchSurvey));
             lblMRS = new Label();
             lblNote = new Label();
             lblEmail = new Label();
@@ -112,7 +111,7 @@
             btnNext.UseVisualStyleBackColor = true;
             btnNext.Click += btnNext_Click;
             // 
-            // UserData
+            // MarketResearchSurvey
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -125,9 +124,8 @@
             Controls.Add(lblEmail);
             Controls.Add(lblNote);
             Controls.Add(lblMRS);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "UserData";
+            Name = "MarketResearchSurvey";
             ShowIcon = false;
             ResumeLayout(false);
             PerformLayout();

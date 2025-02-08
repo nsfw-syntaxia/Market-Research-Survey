@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Questionnaire));
             grbxHODYE = new GroupBox();
+            lblEOHODYE = new Label();
             rbtnEXFREQ3 = new RadioButton();
-            lblHODYE10 = new Label();
-            lblHODYE9 = new Label();
-            rbtnEXFREQ1 = new RadioButton();
-            lblHODYE8 = new Label();
-            rbtnEXFREQ2 = new RadioButton();
-            lblHODYE7 = new Label();
-            lblHODYE6 = new Label();
-            rbtnEXFREQ4 = new RadioButton();
+            lblNAOHODYE = new Label();
             lblHODYE5 = new Label();
-            rbtnEXFREQ5 = new RadioButton();
-            lblHODYE4 = new Label();
-            rbtnEXFREQ6 = new RadioButton();
-            lblHODYE3 = new Label();
-            rbtnEXFREQ7 = new RadioButton();
             lblHODYE2 = new Label();
+            lblHODYE7 = new Label();
+            rbtnEXFREQ2 = new RadioButton();
+            lblHODYE10 = new Label();
+            rbtnEXFREQ7 = new RadioButton();
             rbtnEXFREQ8 = new RadioButton();
+            rbtnEXFREQ10 = new RadioButton();
+            lblHODYE3 = new Label();
+            lblHODYE6 = new Label();
+            lblHODYE8 = new Label();
+            lblHODYE9 = new Label();
+            rbtnEXFREQ4 = new RadioButton();
+            rbtnEXFREQ5 = new RadioButton();
             lblHODYE1 = new Label();
             rbtnEXFREQ9 = new RadioButton();
-            lblEOHODYE = new Label();
-            rbtnEXFREQ10 = new RadioButton();
-            lblNAOHODYE = new Label();
+            rbtnEXFREQ6 = new RadioButton();
+            lblHODYE4 = new Label();
+            rbtnEXFREQ1 = new RadioButton();
             grbxHODYUSP = new GroupBox();
             lblEOLHODYUSP = new Label();
             rbtnUFREQ3 = new RadioButton();
@@ -79,31 +78,31 @@
             grbxWDYLBAS = new GroupBox();
             rbtnLTAM = new RadioButton();
             rbtnB16M = new RadioButton();
+            rbtnB6M1Y = new RadioButton();
             rbtnMT1Y = new RadioButton();
             rbtnIDNR = new RadioButton();
-            rbtnB6M1Y = new RadioButton();
             grbxPurpose = new GroupBox();
-            chbxGF = new CheckBox();
-            chbxR = new CheckBox();
-            chbxH = new CheckBox();
-            chbxOF = new CheckBox();
-            chbxS = new CheckBox();
             chbxOWB = new CheckBox();
+            chbxS = new CheckBox();
+            chbxH = new CheckBox();
+            chbxR = new CheckBox();
+            chbxGF = new CheckBox();
+            chbxOF = new CheckBox();
             grbxWhere = new GroupBox();
+            chbxOnline = new CheckBox();
             chbxRS = new CheckBox();
             chbxDS = new CheckBox();
             chbxMBR = new CheckBox();
-            chbxOnline = new CheckBox();
             chbxOWBF = new CheckBox();
             grbxDesign = new GroupBox();
+            chbxOPDS = new CheckBox();
             chbxMinimalist = new CheckBox();
             chbxBCAD = new CheckBox();
             chbxWSAPO = new CheckBox();
-            chbxOPDS = new CheckBox();
             grbxInfluence = new GroupBox();
-            chbxPrice = new CheckBox();
-            chbxQuality = new CheckBox();
             chbxValue = new CheckBox();
+            chbxQuality = new CheckBox();
+            chbxPrice = new CheckBox();
             chbxBrand = new CheckBox();
             chbxOICB = new CheckBox();
             btnNext = new Button();
@@ -149,6 +148,16 @@
             grbxHODYE.TabStop = false;
             grbxHODYE.Text = "How often do you exercise?";
             // 
+            // lblEOHODYE
+            // 
+            lblEOHODYE.AutoSize = true;
+            lblEOHODYE.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblEOHODYE.Location = new Point(307, 93);
+            lblEOHODYE.Name = "lblEOHODYE";
+            lblEOHODYE.Size = new Size(133, 21);
+            lblEOHODYE.TabIndex = 88;
+            lblEOHODYE.Text = "Extremely Often";
+            // 
             // rbtnEXFREQ3
             // 
             rbtnEXFREQ3.AutoSize = true;
@@ -159,85 +168,15 @@
             rbtnEXFREQ3.TabIndex = 79;
             rbtnEXFREQ3.UseVisualStyleBackColor = true;
             // 
-            // lblHODYE10
+            // lblNAOHODYE
             // 
-            lblHODYE10.AutoSize = true;
-            lblHODYE10.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE10.Location = new Point(286, 65);
-            lblHODYE10.Name = "lblHODYE10";
-            lblHODYE10.Size = new Size(25, 21);
-            lblHODYE10.TabIndex = 98;
-            lblHODYE10.Text = "10";
-            // 
-            // lblHODYE9
-            // 
-            lblHODYE9.AutoSize = true;
-            lblHODYE9.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE9.Location = new Point(268, 65);
-            lblHODYE9.Name = "lblHODYE9";
-            lblHODYE9.Size = new Size(19, 21);
-            lblHODYE9.TabIndex = 97;
-            lblHODYE9.Text = "9";
-            // 
-            // rbtnEXFREQ1
-            // 
-            rbtnEXFREQ1.AutoSize = true;
-            rbtnEXFREQ1.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ1.Location = new Point(110, 49);
-            rbtnEXFREQ1.Name = "rbtnEXFREQ1";
-            rbtnEXFREQ1.Size = new Size(14, 13);
-            rbtnEXFREQ1.TabIndex = 78;
-            rbtnEXFREQ1.UseVisualStyleBackColor = true;
-            // 
-            // lblHODYE8
-            // 
-            lblHODYE8.AutoSize = true;
-            lblHODYE8.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE8.Location = new Point(248, 65);
-            lblHODYE8.Name = "lblHODYE8";
-            lblHODYE8.Size = new Size(20, 21);
-            lblHODYE8.TabIndex = 96;
-            lblHODYE8.Text = "8";
-            // 
-            // rbtnEXFREQ2
-            // 
-            rbtnEXFREQ2.AutoSize = true;
-            rbtnEXFREQ2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ2.Location = new Point(130, 49);
-            rbtnEXFREQ2.Name = "rbtnEXFREQ2";
-            rbtnEXFREQ2.Size = new Size(14, 13);
-            rbtnEXFREQ2.TabIndex = 77;
-            rbtnEXFREQ2.UseVisualStyleBackColor = true;
-            // 
-            // lblHODYE7
-            // 
-            lblHODYE7.AutoSize = true;
-            lblHODYE7.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE7.Location = new Point(228, 65);
-            lblHODYE7.Name = "lblHODYE7";
-            lblHODYE7.Size = new Size(19, 21);
-            lblHODYE7.TabIndex = 95;
-            lblHODYE7.Text = "7";
-            // 
-            // lblHODYE6
-            // 
-            lblHODYE6.AutoSize = true;
-            lblHODYE6.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE6.Location = new Point(208, 65);
-            lblHODYE6.Name = "lblHODYE6";
-            lblHODYE6.Size = new Size(19, 21);
-            lblHODYE6.TabIndex = 94;
-            lblHODYE6.Text = "6";
-            // 
-            // rbtnEXFREQ4
-            // 
-            rbtnEXFREQ4.AutoSize = true;
-            rbtnEXFREQ4.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ4.Location = new Point(170, 49);
-            rbtnEXFREQ4.Name = "rbtnEXFREQ4";
-            rbtnEXFREQ4.Size = new Size(14, 13);
-            rbtnEXFREQ4.TabIndex = 80;
-            rbtnEXFREQ4.UseVisualStyleBackColor = true;
+            lblNAOHODYE.AutoSize = true;
+            lblNAOHODYE.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblNAOHODYE.Location = new Point(6, 93);
+            lblNAOHODYE.Name = "lblNAOHODYE";
+            lblNAOHODYE.Size = new Size(108, 21);
+            lblNAOHODYE.TabIndex = 87;
+            lblNAOHODYE.Text = "Not All Often";
             // 
             // lblHODYE5
             // 
@@ -249,45 +188,45 @@
             lblHODYE5.TabIndex = 93;
             lblHODYE5.Text = "5";
             // 
-            // rbtnEXFREQ5
+            // lblHODYE2
             // 
-            rbtnEXFREQ5.AutoSize = true;
-            rbtnEXFREQ5.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ5.Location = new Point(190, 49);
-            rbtnEXFREQ5.Name = "rbtnEXFREQ5";
-            rbtnEXFREQ5.Size = new Size(14, 13);
-            rbtnEXFREQ5.TabIndex = 81;
-            rbtnEXFREQ5.UseVisualStyleBackColor = true;
+            lblHODYE2.AutoSize = true;
+            lblHODYE2.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE2.Location = new Point(128, 65);
+            lblHODYE2.Name = "lblHODYE2";
+            lblHODYE2.Size = new Size(19, 21);
+            lblHODYE2.TabIndex = 90;
+            lblHODYE2.Text = "2";
             // 
-            // lblHODYE4
+            // lblHODYE7
             // 
-            lblHODYE4.AutoSize = true;
-            lblHODYE4.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE4.Location = new Point(168, 65);
-            lblHODYE4.Name = "lblHODYE4";
-            lblHODYE4.Size = new Size(20, 21);
-            lblHODYE4.TabIndex = 92;
-            lblHODYE4.Text = "4";
+            lblHODYE7.AutoSize = true;
+            lblHODYE7.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE7.Location = new Point(228, 65);
+            lblHODYE7.Name = "lblHODYE7";
+            lblHODYE7.Size = new Size(19, 21);
+            lblHODYE7.TabIndex = 95;
+            lblHODYE7.Text = "7";
             // 
-            // rbtnEXFREQ6
+            // rbtnEXFREQ2
             // 
-            rbtnEXFREQ6.AutoSize = true;
-            rbtnEXFREQ6.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ6.Location = new Point(210, 49);
-            rbtnEXFREQ6.Name = "rbtnEXFREQ6";
-            rbtnEXFREQ6.Size = new Size(14, 13);
-            rbtnEXFREQ6.TabIndex = 82;
-            rbtnEXFREQ6.UseVisualStyleBackColor = true;
+            rbtnEXFREQ2.AutoSize = true;
+            rbtnEXFREQ2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ2.Location = new Point(130, 49);
+            rbtnEXFREQ2.Name = "rbtnEXFREQ2";
+            rbtnEXFREQ2.Size = new Size(14, 13);
+            rbtnEXFREQ2.TabIndex = 77;
+            rbtnEXFREQ2.UseVisualStyleBackColor = true;
             // 
-            // lblHODYE3
+            // lblHODYE10
             // 
-            lblHODYE3.AutoSize = true;
-            lblHODYE3.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE3.Location = new Point(148, 65);
-            lblHODYE3.Name = "lblHODYE3";
-            lblHODYE3.Size = new Size(19, 21);
-            lblHODYE3.TabIndex = 91;
-            lblHODYE3.Text = "3";
+            lblHODYE10.AutoSize = true;
+            lblHODYE10.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE10.Location = new Point(286, 65);
+            lblHODYE10.Name = "lblHODYE10";
+            lblHODYE10.Size = new Size(25, 21);
+            lblHODYE10.TabIndex = 98;
+            lblHODYE10.Text = "10";
             // 
             // rbtnEXFREQ7
             // 
@@ -299,16 +238,6 @@
             rbtnEXFREQ7.TabIndex = 83;
             rbtnEXFREQ7.UseVisualStyleBackColor = true;
             // 
-            // lblHODYE2
-            // 
-            lblHODYE2.AutoSize = true;
-            lblHODYE2.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblHODYE2.Location = new Point(128, 65);
-            lblHODYE2.Name = "lblHODYE2";
-            lblHODYE2.Size = new Size(19, 21);
-            lblHODYE2.TabIndex = 90;
-            lblHODYE2.Text = "2";
-            // 
             // rbtnEXFREQ8
             // 
             rbtnEXFREQ8.AutoSize = true;
@@ -318,6 +247,76 @@
             rbtnEXFREQ8.Size = new Size(14, 13);
             rbtnEXFREQ8.TabIndex = 84;
             rbtnEXFREQ8.UseVisualStyleBackColor = true;
+            // 
+            // rbtnEXFREQ10
+            // 
+            rbtnEXFREQ10.AutoSize = true;
+            rbtnEXFREQ10.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ10.Location = new Point(290, 49);
+            rbtnEXFREQ10.Name = "rbtnEXFREQ10";
+            rbtnEXFREQ10.Size = new Size(14, 13);
+            rbtnEXFREQ10.TabIndex = 86;
+            rbtnEXFREQ10.UseVisualStyleBackColor = true;
+            // 
+            // lblHODYE3
+            // 
+            lblHODYE3.AutoSize = true;
+            lblHODYE3.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE3.Location = new Point(148, 65);
+            lblHODYE3.Name = "lblHODYE3";
+            lblHODYE3.Size = new Size(19, 21);
+            lblHODYE3.TabIndex = 91;
+            lblHODYE3.Text = "3";
+            // 
+            // lblHODYE6
+            // 
+            lblHODYE6.AutoSize = true;
+            lblHODYE6.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE6.Location = new Point(208, 65);
+            lblHODYE6.Name = "lblHODYE6";
+            lblHODYE6.Size = new Size(19, 21);
+            lblHODYE6.TabIndex = 94;
+            lblHODYE6.Text = "6";
+            // 
+            // lblHODYE8
+            // 
+            lblHODYE8.AutoSize = true;
+            lblHODYE8.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE8.Location = new Point(248, 65);
+            lblHODYE8.Name = "lblHODYE8";
+            lblHODYE8.Size = new Size(20, 21);
+            lblHODYE8.TabIndex = 96;
+            lblHODYE8.Text = "8";
+            // 
+            // lblHODYE9
+            // 
+            lblHODYE9.AutoSize = true;
+            lblHODYE9.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE9.Location = new Point(268, 65);
+            lblHODYE9.Name = "lblHODYE9";
+            lblHODYE9.Size = new Size(19, 21);
+            lblHODYE9.TabIndex = 97;
+            lblHODYE9.Text = "9";
+            // 
+            // rbtnEXFREQ4
+            // 
+            rbtnEXFREQ4.AutoSize = true;
+            rbtnEXFREQ4.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ4.Location = new Point(170, 49);
+            rbtnEXFREQ4.Name = "rbtnEXFREQ4";
+            rbtnEXFREQ4.Size = new Size(14, 13);
+            rbtnEXFREQ4.TabIndex = 80;
+            rbtnEXFREQ4.UseVisualStyleBackColor = true;
+            // 
+            // rbtnEXFREQ5
+            // 
+            rbtnEXFREQ5.AutoSize = true;
+            rbtnEXFREQ5.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ5.Location = new Point(190, 49);
+            rbtnEXFREQ5.Name = "rbtnEXFREQ5";
+            rbtnEXFREQ5.Size = new Size(14, 13);
+            rbtnEXFREQ5.TabIndex = 81;
+            rbtnEXFREQ5.UseVisualStyleBackColor = true;
             // 
             // lblHODYE1
             // 
@@ -339,35 +338,35 @@
             rbtnEXFREQ9.TabIndex = 85;
             rbtnEXFREQ9.UseVisualStyleBackColor = true;
             // 
-            // lblEOHODYE
+            // rbtnEXFREQ6
             // 
-            lblEOHODYE.AutoSize = true;
-            lblEOHODYE.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblEOHODYE.Location = new Point(307, 93);
-            lblEOHODYE.Name = "lblEOHODYE";
-            lblEOHODYE.Size = new Size(133, 21);
-            lblEOHODYE.TabIndex = 88;
-            lblEOHODYE.Text = "Extremely Often";
+            rbtnEXFREQ6.AutoSize = true;
+            rbtnEXFREQ6.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ6.Location = new Point(210, 49);
+            rbtnEXFREQ6.Name = "rbtnEXFREQ6";
+            rbtnEXFREQ6.Size = new Size(14, 13);
+            rbtnEXFREQ6.TabIndex = 82;
+            rbtnEXFREQ6.UseVisualStyleBackColor = true;
             // 
-            // rbtnEXFREQ10
+            // lblHODYE4
             // 
-            rbtnEXFREQ10.AutoSize = true;
-            rbtnEXFREQ10.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnEXFREQ10.Location = new Point(290, 49);
-            rbtnEXFREQ10.Name = "rbtnEXFREQ10";
-            rbtnEXFREQ10.Size = new Size(14, 13);
-            rbtnEXFREQ10.TabIndex = 86;
-            rbtnEXFREQ10.UseVisualStyleBackColor = true;
+            lblHODYE4.AutoSize = true;
+            lblHODYE4.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            lblHODYE4.Location = new Point(168, 65);
+            lblHODYE4.Name = "lblHODYE4";
+            lblHODYE4.Size = new Size(20, 21);
+            lblHODYE4.TabIndex = 92;
+            lblHODYE4.Text = "4";
             // 
-            // lblNAOHODYE
+            // rbtnEXFREQ1
             // 
-            lblNAOHODYE.AutoSize = true;
-            lblNAOHODYE.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            lblNAOHODYE.Location = new Point(6, 93);
-            lblNAOHODYE.Name = "lblNAOHODYE";
-            lblNAOHODYE.Size = new Size(108, 21);
-            lblNAOHODYE.TabIndex = 87;
-            lblNAOHODYE.Text = "Not All Often";
+            rbtnEXFREQ1.AutoSize = true;
+            rbtnEXFREQ1.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rbtnEXFREQ1.Location = new Point(110, 49);
+            rbtnEXFREQ1.Name = "rbtnEXFREQ1";
+            rbtnEXFREQ1.Size = new Size(14, 13);
+            rbtnEXFREQ1.TabIndex = 78;
+            rbtnEXFREQ1.UseVisualStyleBackColor = true;
             // 
             // grbxHODYUSP
             // 
@@ -667,6 +666,17 @@
             rbtnB16M.Text = "Between 1 and 6 months ago";
             rbtnB16M.UseVisualStyleBackColor = true;
             // 
+            // rbtnB6M1Y
+            // 
+            rbtnB6M1Y.AutoSize = true;
+            rbtnB6M1Y.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            rbtnB6M1Y.Location = new Point(29, 141);
+            rbtnB6M1Y.Name = "rbtnB6M1Y";
+            rbtnB6M1Y.Size = new Size(283, 25);
+            rbtnB6M1Y.TabIndex = 111;
+            rbtnB6M1Y.Text = "Between 6 months and 1 year ago";
+            rbtnB6M1Y.UseVisualStyleBackColor = true;
+            // 
             // rbtnMT1Y
             // 
             rbtnMT1Y.AutoSize = true;
@@ -689,17 +699,6 @@
             rbtnIDNR.Text = "I do not remember";
             rbtnIDNR.UseVisualStyleBackColor = true;
             // 
-            // rbtnB6M1Y
-            // 
-            rbtnB6M1Y.AutoSize = true;
-            rbtnB6M1Y.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            rbtnB6M1Y.Location = new Point(29, 141);
-            rbtnB6M1Y.Name = "rbtnB6M1Y";
-            rbtnB6M1Y.Size = new Size(283, 25);
-            rbtnB6M1Y.TabIndex = 111;
-            rbtnB6M1Y.Text = "Between 6 months and 1 year ago";
-            rbtnB6M1Y.UseVisualStyleBackColor = true;
-            // 
             // grbxPurpose
             // 
             grbxPurpose.Controls.Add(chbxOWB);
@@ -717,49 +716,16 @@
             grbxPurpose.TabStop = false;
             grbxPurpose.Text = "Which of the following would describe your purpose to buy sportswear?";
             // 
-            // chbxGF
+            // chbxOWB
             // 
-            chbxGF.AutoSize = true;
-            chbxGF.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxGF.Location = new Point(29, 115);
-            chbxGF.Name = "chbxGF";
-            chbxGF.Size = new Size(125, 25);
-            chbxGF.TabIndex = 116;
-            chbxGF.Text = "Gym/Fitness";
-            chbxGF.UseVisualStyleBackColor = true;
-            // 
-            // chbxR
-            // 
-            chbxR.AutoSize = true;
-            chbxR.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxR.Location = new Point(29, 144);
-            chbxR.Name = "chbxR";
-            chbxR.Size = new Size(89, 25);
-            chbxR.TabIndex = 117;
-            chbxR.Text = "Running";
-            chbxR.UseVisualStyleBackColor = true;
-            // 
-            // chbxH
-            // 
-            chbxH.AutoSize = true;
-            chbxH.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxH.Location = new Point(29, 174);
-            chbxH.Name = "chbxH";
-            chbxH.Size = new Size(76, 25);
-            chbxH.TabIndex = 118;
-            chbxH.Text = "Hiking";
-            chbxH.UseVisualStyleBackColor = true;
-            // 
-            // chbxOF
-            // 
-            chbxOF.AutoSize = true;
-            chbxOF.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxOF.Location = new Point(224, 115);
-            chbxOF.Name = "chbxOF";
-            chbxOF.Size = new Size(148, 25);
-            chbxOF.TabIndex = 119;
-            chbxOF.Text = "Outdoor fashion";
-            chbxOF.UseVisualStyleBackColor = true;
+            chbxOWB.AutoSize = true;
+            chbxOWB.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxOWB.Location = new Point(224, 174);
+            chbxOWB.Name = "chbxOWB";
+            chbxOWB.Size = new Size(71, 25);
+            chbxOWB.TabIndex = 121;
+            chbxOWB.Text = "Other";
+            chbxOWB.UseVisualStyleBackColor = true;
             // 
             // chbxS
             // 
@@ -772,16 +738,49 @@
             chbxS.Text = "Sports";
             chbxS.UseVisualStyleBackColor = true;
             // 
-            // chbxOWB
+            // chbxH
             // 
-            chbxOWB.AutoSize = true;
-            chbxOWB.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxOWB.Location = new Point(224, 174);
-            chbxOWB.Name = "chbxOWB";
-            chbxOWB.Size = new Size(71, 25);
-            chbxOWB.TabIndex = 121;
-            chbxOWB.Text = "Other";
-            chbxOWB.UseVisualStyleBackColor = true;
+            chbxH.AutoSize = true;
+            chbxH.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxH.Location = new Point(29, 174);
+            chbxH.Name = "chbxH";
+            chbxH.Size = new Size(76, 25);
+            chbxH.TabIndex = 118;
+            chbxH.Text = "Hiking";
+            chbxH.UseVisualStyleBackColor = true;
+            // 
+            // chbxR
+            // 
+            chbxR.AutoSize = true;
+            chbxR.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxR.Location = new Point(29, 144);
+            chbxR.Name = "chbxR";
+            chbxR.Size = new Size(89, 25);
+            chbxR.TabIndex = 117;
+            chbxR.Text = "Running";
+            chbxR.UseVisualStyleBackColor = true;
+            // 
+            // chbxGF
+            // 
+            chbxGF.AutoSize = true;
+            chbxGF.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxGF.Location = new Point(29, 115);
+            chbxGF.Name = "chbxGF";
+            chbxGF.Size = new Size(125, 25);
+            chbxGF.TabIndex = 116;
+            chbxGF.Text = "Gym/Fitness";
+            chbxGF.UseVisualStyleBackColor = true;
+            // 
+            // chbxOF
+            // 
+            chbxOF.AutoSize = true;
+            chbxOF.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxOF.Location = new Point(224, 115);
+            chbxOF.Name = "chbxOF";
+            chbxOF.Size = new Size(148, 25);
+            chbxOF.TabIndex = 119;
+            chbxOF.Text = "Outdoor fashion";
+            chbxOF.UseVisualStyleBackColor = true;
             // 
             // grbxWhere
             // 
@@ -798,6 +797,17 @@
             grbxWhere.TabIndex = 122;
             grbxWhere.TabStop = false;
             grbxWhere.Text = "Where do you usually buy your sportswear from?";
+            // 
+            // chbxOnline
+            // 
+            chbxOnline.AutoSize = true;
+            chbxOnline.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxOnline.Location = new Point(224, 84);
+            chbxOnline.Name = "chbxOnline";
+            chbxOnline.Size = new Size(76, 25);
+            chbxOnline.TabIndex = 126;
+            chbxOnline.Text = "Online";
+            chbxOnline.UseVisualStyleBackColor = true;
             // 
             // chbxRS
             // 
@@ -832,17 +842,6 @@
             chbxMBR.Text = "Multi-brand retail";
             chbxMBR.UseVisualStyleBackColor = true;
             // 
-            // chbxOnline
-            // 
-            chbxOnline.AutoSize = true;
-            chbxOnline.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxOnline.Location = new Point(224, 84);
-            chbxOnline.Name = "chbxOnline";
-            chbxOnline.Size = new Size(76, 25);
-            chbxOnline.TabIndex = 126;
-            chbxOnline.Text = "Online";
-            chbxOnline.UseVisualStyleBackColor = true;
-            // 
             // chbxOWBF
             // 
             chbxOWBF.AutoSize = true;
@@ -868,6 +867,17 @@
             grbxDesign.TabIndex = 128;
             grbxDesign.TabStop = false;
             grbxDesign.Text = "What is your preferred design for sportswear?";
+            // 
+            // chbxOPDS
+            // 
+            chbxOPDS.AutoSize = true;
+            chbxOPDS.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxOPDS.Location = new Point(29, 171);
+            chbxOPDS.Name = "chbxOPDS";
+            chbxOPDS.Size = new Size(71, 25);
+            chbxOPDS.TabIndex = 132;
+            chbxOPDS.Text = "Other";
+            chbxOPDS.UseVisualStyleBackColor = true;
             // 
             // chbxMinimalist
             // 
@@ -902,17 +912,6 @@
             chbxWSAPO.Text = "With slogans and pictures on";
             chbxWSAPO.UseVisualStyleBackColor = true;
             // 
-            // chbxOPDS
-            // 
-            chbxOPDS.AutoSize = true;
-            chbxOPDS.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxOPDS.Location = new Point(29, 171);
-            chbxOPDS.Name = "chbxOPDS";
-            chbxOPDS.Size = new Size(71, 25);
-            chbxOPDS.TabIndex = 132;
-            chbxOPDS.Text = "Other";
-            chbxOPDS.UseVisualStyleBackColor = true;
-            // 
             // grbxInfluence
             // 
             grbxInfluence.Controls.Add(chbxValue);
@@ -929,16 +928,16 @@
             grbxInfluence.TabStop = false;
             grbxInfluence.Text = "Which of the following would influence your decision to buy a certain brand?";
             // 
-            // chbxPrice
+            // chbxValue
             // 
-            chbxPrice.AutoSize = true;
-            chbxPrice.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxPrice.Location = new Point(29, 116);
-            chbxPrice.Name = "chbxPrice";
-            chbxPrice.Size = new Size(68, 25);
-            chbxPrice.TabIndex = 134;
-            chbxPrice.Text = "Price";
-            chbxPrice.UseVisualStyleBackColor = true;
+            chbxValue.AutoSize = true;
+            chbxValue.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxValue.Location = new Point(29, 175);
+            chbxValue.Name = "chbxValue";
+            chbxValue.Size = new Size(71, 25);
+            chbxValue.TabIndex = 136;
+            chbxValue.Text = "Value";
+            chbxValue.UseVisualStyleBackColor = true;
             // 
             // chbxQuality
             // 
@@ -951,16 +950,16 @@
             chbxQuality.Text = "Quality";
             chbxQuality.UseVisualStyleBackColor = true;
             // 
-            // chbxValue
+            // chbxPrice
             // 
-            chbxValue.AutoSize = true;
-            chbxValue.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chbxValue.Location = new Point(29, 175);
-            chbxValue.Name = "chbxValue";
-            chbxValue.Size = new Size(71, 25);
-            chbxValue.TabIndex = 136;
-            chbxValue.Text = "Value";
-            chbxValue.UseVisualStyleBackColor = true;
+            chbxPrice.AutoSize = true;
+            chbxPrice.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chbxPrice.Location = new Point(29, 116);
+            chbxPrice.Name = "chbxPrice";
+            chbxPrice.Size = new Size(68, 25);
+            chbxPrice.TabIndex = 134;
+            chbxPrice.Text = "Price";
+            chbxPrice.UseVisualStyleBackColor = true;
             // 
             // chbxBrand
             // 
@@ -1012,7 +1011,6 @@
             Controls.Add(panel1);
             Controls.Add(grbxHODYUSP);
             Controls.Add(grbxHODYE);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Questionnaire";
             ShowIcon = false;

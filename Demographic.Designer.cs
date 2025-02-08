@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Demographic));
             grbxGender = new GroupBox();
             rbtnGPNTS = new RadioButton();
             rbtnFemale = new RadioButton();
@@ -663,7 +662,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(486, 633);
+            ClientSize = new Size(487, 633);
             Controls.Add(btnNext);
             Controls.Add(groupBox2);
             Controls.Add(panelScroll);
@@ -672,7 +671,6 @@
             Controls.Add(grbxStatus);
             Controls.Add(grbxAge);
             Controls.Add(grbxGender);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Demographic";
             ShowIcon = false;
