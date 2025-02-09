@@ -57,8 +57,8 @@ namespace MarketResearchSurvey
 
     public static class SurveyData
     {
-        public static string Email { get; set; } = "";
-        public static string Name { get; set; } = "";
+        public static string Email { get; set; }
+        public static string Name { get; set; }
         public static string Gender { get; set; }
         public static string Age { get; set; }
         public static string MaritalStatus { get; set; }
