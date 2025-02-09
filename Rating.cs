@@ -257,7 +257,46 @@ namespace MarketResearchSurvey
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //
+            if (string.IsNullOrEmpty(SurveyData.WaterResistance) || string.IsNullOrEmpty(SurveyData.Cooling) || 
+                string.IsNullOrEmpty(SurveyData.AntiBacteria) || string.IsNullOrEmpty(SurveyData.AntiOdour) || 
+                string.IsNullOrEmpty(SurveyData.SSM) || string.IsNullOrEmpty(SurveyData.Elasticity) || 
+                string.IsNullOrEmpty(SurveyData.Endurance) || string.IsNullOrEmpty(SurveyData.Personification) || 
+                string.IsNullOrEmpty(SurveyData.Interest))
+            {
+                MessageBox.Show("Please complete all fields before submitting.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string summary = "[ SUMMARY ]\n\n" +
+                             $"Name: {SurveyData.Name}\n" +
+                             $"Gender: {SurveyData.Gender}\n" +
+                             $"Age Range: {SurveyData.Age}\n" +
+                             $"Marital Status: {SurveyData.MaritalStatus}\n" +
+                             $"Annual Income Range: {SurveyData.Income}\n" +
+                             $"Employment Status: {SurveyData.Employment}\n" +
+                             $"Highest Education Attained: {SurveyData.Education}\n\n" +
+                             $"Frequency of Exercise: {SurveyData.FreqExercise}\n" +
+                             $"Frequency of Product Use: {SurveyData.FreqUse}\n" +
+                             $"Last Purchase: {SurveyData.LastBuy}\n" +
+                             $"Purpose of Purchase: {SurveyData.WhyBuy}\n" +
+                             $"Shops to Purchase: {SurveyData.WhereBuy}\n" +
+                             $"Preferred Design: {SurveyData.Design}\n" +
+                             $"Purchase Influence: {SurveyData.Influence}\n\n" +
+                             $"Water Resistance: {SurveyData.WaterResistance}/5\n" +
+                             $"Cooling: {SurveyData.Cooling}/5\n" +
+                             $"Anti-Bacteria: {SurveyData.AntiBacteria}/5\n" +
+                             $"Anti-Odour: {SurveyData.AntiOdour}/5\n" +
+                             $"Soft and Smooth Material: {SurveyData.SSM}/5\n" +
+                             $"Elasticity: {SurveyData.Elasticity}/5\n" +
+                             $"Endurance: {SurveyData.Endurance}/5\n\n" +
+                             $"Personification of Favorite Brand: {SurveyData.Personification}\n" +
+                             $"Interests: {SurveyData.Interest}\n" +
+                             $"Email: {SurveyData.Email}\n\n" +
+                             "Thank you for participating!";
+
+            MessageBox.Show($"Successfully submitted!\n\n{summary}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
