@@ -12,8 +12,6 @@ namespace MarketResearchSurvey
 {
     public partial class Rating : Form
     {
-        private string fvp = "";
-
         public Rating()
         {
             InitializeComponent();
@@ -246,12 +244,20 @@ namespace MarketResearchSurvey
 
         private void cbxfvp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            fvp = cbxfvp.SelectedItem?.ToString() ?? "Other";
+            SurveyData.Personification = cbxfvp.SelectedItem?.ToString();
+        }
+
+        private void chlbxintrs_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            this.BeginInvoke(new Action(() =>
+            {
+                SurveyData.Interest = string.Join(", ", chlbxintrs.CheckedItems.Cast<string>());
+            }));
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -2759,16 +2759,16 @@ namespace MarketResearchSurvey
             groupBox17.TabStop = false;
             groupBox17.Text = "Water Resistance";
             // 
-            // MarketResearchSurvey
+            // MRS
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(647, 1061);
+            ClientSize = new Size(647, 600);
             Controls.Add(panel);
             Controls.Add(groupBox1);
-            Name = "MarketResearchSurvey";
+            Name = "MRS";
             ShowIcon = false;
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();

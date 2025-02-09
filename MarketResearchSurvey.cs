@@ -82,5 +82,7 @@ namespace MarketResearchSurvey
         public static string SSM { get; set; }
         public static string Elasticity { get; set; }
         public static string Endurance { get; set; }
+        public static string Personification { get; set; }
+        public static string Interest { get; set; }
     }
 }

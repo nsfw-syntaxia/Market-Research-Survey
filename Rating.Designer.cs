@@ -1081,6 +1081,7 @@
             chlbxintrs.Name = "chlbxintrs";
             chlbxintrs.Size = new Size(446, 69);
             chlbxintrs.TabIndex = 250;
+            chlbxintrs.ItemCheck += chlbxintrs_ItemCheck;
             // 
             // btnBack
             // 
