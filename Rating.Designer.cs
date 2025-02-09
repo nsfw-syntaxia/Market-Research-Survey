@@ -113,6 +113,7 @@
             btnSubmit = new Button();
             label1 = new Label();
             chlbxfvp = new CheckedListBox();
+            btnBack = new Button();
             grbxWaterR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wrf5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wrf3).BeginInit();
@@ -1014,7 +1015,7 @@
             // 
             btnSubmit.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSubmit.ForeColor = Color.DarkSlateGray;
-            btnSubmit.Location = new Point(198, 1266);
+            btnSubmit.Location = new Point(245, 1266);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(75, 28);
             btnSubmit.TabIndex = 247;
@@ -1046,6 +1047,18 @@
             chlbxfvp.Size = new Size(446, 69);
             chlbxfvp.TabIndex = 250;
             // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.ForeColor = Color.DarkSlateGray;
+            btnBack.Location = new Point(151, 1266);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 28);
+            btnBack.TabIndex = 252;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // Rating
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1053,6 +1066,7 @@
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(487, 752);
+            Controls.Add(btnBack);
             Controls.Add(chlbxfvp);
             Controls.Add(label1);
             Controls.Add(btnSubmit);
@@ -1238,5 +1252,6 @@
         private ComboBox comboBox1;
         private Label label1;
         private CheckedListBox chlbxfvp;
+        private Button btnBack;
     }
 }

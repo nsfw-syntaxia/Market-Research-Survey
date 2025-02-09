@@ -105,6 +105,7 @@
             chbxPrice = new CheckBox();
             chbxBrand = new CheckBox();
             chbxOICB = new CheckBox();
+            btnBack = new Button();
             btnNext = new Button();
             grbxHODYE.SuspendLayout();
             grbxHODYUSP.SuspendLayout();
@@ -983,14 +984,25 @@
             chbxOICB.Text = "Other";
             chbxOICB.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.ForeColor = Color.DarkSlateGray;
+            btnBack.Location = new Point(148, 1417);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 28);
+            btnBack.TabIndex = 136;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            // 
             // btnNext
             // 
             btnNext.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnNext.ForeColor = Color.DarkSlateGray;
-            btnNext.Location = new Point(198, 1417);
+            btnNext.Location = new Point(242, 1417);
             btnNext.Name = "btnNext";
             btnNext.Size = new Size(75, 28);
-            btnNext.TabIndex = 134;
+            btnNext.TabIndex = 135;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = true;
             btnNext.Click += btnNext_Click;
@@ -1002,6 +1014,7 @@
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(487, 795);
+            Controls.Add(btnBack);
             Controls.Add(btnNext);
             Controls.Add(grbxInfluence);
             Controls.Add(grbxDesign);
@@ -1110,6 +1123,7 @@
         private CheckBox chbxValue;
         private CheckBox chbxBrand;
         private CheckBox chbxOICB;
+        private Button btnBack;
         private Button btnNext;
     }
 }

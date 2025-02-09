@@ -76,6 +76,7 @@
             rbtnSCU = new RadioButton();
             rbtnCDC = new RadioButton();
             btnNext = new Button();
+            btnBack = new Button();
             grbxGender.SuspendLayout();
             grbxAge.SuspendLayout();
             grbxStatus.SuspendLayout();
@@ -648,7 +649,7 @@
             // 
             btnNext.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnNext.ForeColor = Color.DarkSlateGray;
-            btnNext.Location = new Point(197, 1126);
+            btnNext.Location = new Point(246, 1126);
             btnNext.Name = "btnNext";
             btnNext.Size = new Size(75, 28);
             btnNext.TabIndex = 80;
@@ -656,13 +657,25 @@
             btnNext.UseVisualStyleBackColor = true;
             btnNext.Click += btnNext_Click;
             // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.ForeColor = Color.DarkSlateGray;
+            btnBack.Location = new Point(152, 1126);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 28);
+            btnBack.TabIndex = 81;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            // 
             // Demographic
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(487, 633);
+            ClientSize = new Size(487, 808);
+            Controls.Add(btnBack);
             Controls.Add(btnNext);
             Controls.Add(groupBox2);
             Controls.Add(panelScroll);
@@ -739,5 +752,6 @@
         private RadioButton rbtnSCU;
         private RadioButton rbtnCDC;
         private Button btnNext;
+        private Button btnBack;
     }
 }
