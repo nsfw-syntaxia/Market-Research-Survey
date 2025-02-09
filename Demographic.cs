@@ -37,17 +37,17 @@ namespace MarketResearchSurvey
             }
             if (!filled(grbxIncome))
             {
-                MessageBox.Show("Please select your income range.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select your income range.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (!filled(grbxEmployment))
             {
-                MessageBox.Show("Please select your employment status.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select your employment status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (!filled(grbxEducation))
             {
-                MessageBox.Show("Please select your education level.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select your highest education attained.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
