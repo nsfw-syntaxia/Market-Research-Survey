@@ -94,6 +94,24 @@ namespace MarketResearchSurvey
             aof3.Click += AntiOdour_Click;
             aof4.Click += AntiOdour_Click;
             aof5.Click += AntiOdour_Click;
+
+            ssmnf1.Tag = ssmf1.Tag = "1";
+            ssmnf2.Tag = ssmf2.Tag = "2";
+            ssmnf3.Tag = ssmf3.Tag = "3";
+            ssmnf4.Tag = ssmf4.Tag = "4";
+            ssmnf5.Tag = ssmf5.Tag = "5";
+
+            ssmnf1.Click += SSM_Click;
+            ssmnf2.Click += SSM_Click;
+            ssmnf3.Click += SSM_Click;
+            ssmnf4.Click += SSM_Click;
+            ssmnf5.Click += SSM_Click;
+
+            ssmf1.Click += SSM_Click;
+            ssmf2.Click += SSM_Click;
+            ssmf3.Click += SSM_Click;
+            ssmf4.Click += SSM_Click;
+            ssmf5.Click += SSM_Click;
         }
 
         private void WaterResistance_Click(object sender, EventArgs e)
