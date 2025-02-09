@@ -31,7 +31,10 @@ namespace MarketResearchSurvey
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Questionnaire questionnaire = new Questionnaire();
+            questionnaire.ShowDialog();
+            this.Close();
         }
     }
 }

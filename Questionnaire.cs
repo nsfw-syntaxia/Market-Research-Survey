@@ -86,6 +86,18 @@ namespace MarketResearchSurvey
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            if (!filled(grbxHODYE) || !filled(grbxHODYUSP) || !filled(grbxWDYLBAS))
+            {
+                MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!check(grbxPurpose) || !check(grbxWhere) || !check(grbxDesign) || !check(grbxInfluence))
+            {
+                MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (rbtnEXFREQ1.Checked)
                 SurveyData.FreqExercise = lblHODYE1.Text;
             else if (rbtnEXFREQ2.Checked)
@@ -192,6 +204,16 @@ namespace MarketResearchSurvey
             Rating rating = new Rating();
             rating.ShowDialog();
             this.Close();
+        }
+
+        private bool filled(GroupBox groupBox)
+        {
+            return groupBox.Controls.OfType<RadioButton>().Any(r => r.Checked);
+        }
+
+        private bool check(GroupBox groupBox)
+        {
+            return groupBox.Controls.OfType<CheckBox>().Any(ch => ch.Checked);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
