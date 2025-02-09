@@ -58,6 +58,30 @@ namespace MarketResearchSurvey
             var whereBuySelected = (SurveyData.WhereBuy ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
             var designSelected = (SurveyData.Design ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
             var influenceSelected = (SurveyData.Influence ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+
+            chbxGF.Checked = whyBuySelected.Contains(chbxGF.Text);
+            chbxR.Checked = whyBuySelected.Contains(chbxR.Text);
+            chbxH.Checked = whyBuySelected.Contains(chbxH.Text);
+            chbxOF.Checked = whyBuySelected.Contains(chbxOF.Text);
+            chbxS.Checked = whyBuySelected.Contains(chbxS.Text);
+            chbxOWB.Checked = whyBuySelected.Contains(chbxOWB.Text);
+
+            chbxRS.Checked = whereBuySelected.Contains(chbxRS.Text);
+            chbxDS.Checked = whereBuySelected.Contains(chbxDS.Text);
+            chbxMBR.Checked = whereBuySelected.Contains(chbxMBR.Text);
+            chbxOnline.Checked = whereBuySelected.Contains(chbxOnline.Text);
+            chbxOWBF.Checked = whereBuySelected.Contains(chbxOWBF.Text);
+
+            chbxMinimalist.Checked = designSelected.Contains(chbxMinimalist.Text);
+            chbxBCAD.Checked = designSelected.Contains(chbxBCAD.Text);
+            chbxWSAPO.Checked = designSelected.Contains(chbxWSAPO.Text);
+            chbxOPDS.Checked = designSelected.Contains(chbxOPDS.Text);
+
+            chbxPrice.Checked = influenceSelected.Contains(chbxPrice.Text);
+            chbxQuality.Checked = influenceSelected.Contains(chbxQuality.Text);
+            chbxValue.Checked = influenceSelected.Contains(chbxValue.Text);
+            chbxBrand.Checked = influenceSelected.Contains(chbxBrand.Text);
+            chbxOICB.Checked = influenceSelected.Contains(chbxOICB.Text);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
