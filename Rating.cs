@@ -131,17 +131,17 @@ namespace MarketResearchSurvey
             ef4.Click += Elasticity_Click;
             ef5.Click += Elasticity_Click;
 
-            endnf1.Tag = endf1.Tag = "1";
-            endnf2.Tag = endf2.Tag = "2";
-            endnf3.Tag = endf3.Tag = "3";
-            endnf4.Tag = endf4.Tag = "4";
-            endnf5.Tag = endf5.Tag = "5";
+            ennf1.Tag = endf1.Tag = "1";
+            ennf2.Tag = endf2.Tag = "2";
+            ennf3.Tag = endf3.Tag = "3";
+            ennf4.Tag = endf4.Tag = "4";
+            ennf5.Tag = endf5.Tag = "5";
 
-            endnf1.Click += Endurance_Click;
-            endnf2.Click += Endurance_Click;
-            endnf3.Click += Endurance_Click;
-            endnf4.Click += Endurance_Click;
-            endnf5.Click += Endurance_Click;
+            ennf1.Click += Endurance_Click;
+            ennf2.Click += Endurance_Click;
+            ennf3.Click += Endurance_Click;
+            ennf4.Click += Endurance_Click;
+            ennf5.Click += Endurance_Click;
 
             endf1.Click += Endurance_Click;
             endf2.Click += Endurance_Click;
