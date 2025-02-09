@@ -233,6 +233,7 @@
             wrf5.Size = new Size(65, 65);
             wrf5.TabIndex = 108;
             wrf5.TabStop = false;
+            wrf5.Visible = false;
             // 
             // wrf3
             // 
@@ -242,6 +243,7 @@
             wrf3.Size = new Size(65, 65);
             wrf3.TabIndex = 106;
             wrf3.TabStop = false;
+            wrf3.Visible = false;
             // 
             // wrf4
             // 
@@ -251,6 +253,7 @@
             wrf4.Size = new Size(65, 65);
             wrf4.TabIndex = 107;
             wrf4.TabStop = false;
+            wrf4.Visible = false;
             // 
             // wrf1
             // 
@@ -260,6 +263,7 @@
             wrf1.Size = new Size(65, 65);
             wrf1.TabIndex = 104;
             wrf1.TabStop = false;
+            wrf1.Visible = false;
             // 
             // wrf2
             // 
@@ -269,6 +273,7 @@
             wrf2.Size = new Size(65, 65);
             wrf2.TabIndex = 105;
             wrf2.TabStop = false;
+            wrf2.Visible = false;
             // 
             // wrnf5
             // 
@@ -344,6 +349,7 @@
             cf5.Size = new Size(65, 65);
             cf5.TabIndex = 113;
             cf5.TabStop = false;
+            cf5.Visible = false;
             // 
             // cnf5
             // 
@@ -362,6 +368,7 @@
             cf3.Size = new Size(65, 65);
             cf3.TabIndex = 111;
             cf3.TabStop = false;
+            cf3.Visible = false;
             // 
             // cf4
             // 
@@ -371,6 +378,7 @@
             cf4.Size = new Size(65, 65);
             cf4.TabIndex = 112;
             cf4.TabStop = false;
+            cf4.Visible = false;
             // 
             // cnf3
             // 
@@ -389,6 +397,7 @@
             cf1.Size = new Size(65, 65);
             cf1.TabIndex = 109;
             cf1.TabStop = false;
+            cf1.Visible = false;
             // 
             // cnf4
             // 
@@ -407,6 +416,7 @@
             cf2.Size = new Size(65, 65);
             cf2.TabIndex = 110;
             cf2.TabStop = false;
+            cf2.Visible = false;
             // 
             // cnf1
             // 
@@ -455,6 +465,7 @@
             abf5.Size = new Size(65, 65);
             abf5.TabIndex = 118;
             abf5.TabStop = false;
+            abf5.Visible = false;
             // 
             // abnf5
             // 
@@ -473,6 +484,7 @@
             abf3.Size = new Size(65, 65);
             abf3.TabIndex = 116;
             abf3.TabStop = false;
+            abf3.Visible = false;
             // 
             // abnf3
             // 
@@ -491,6 +503,7 @@
             abf4.Size = new Size(65, 65);
             abf4.TabIndex = 117;
             abf4.TabStop = false;
+            abf4.Visible = false;
             // 
             // abf1
             // 
@@ -500,6 +513,7 @@
             abf1.Size = new Size(65, 65);
             abf1.TabIndex = 114;
             abf1.TabStop = false;
+            abf1.Visible = false;
             // 
             // abnf4
             // 
@@ -518,6 +532,7 @@
             abf2.Size = new Size(65, 65);
             abf2.TabIndex = 115;
             abf2.TabStop = false;
+            abf2.Visible = false;
             // 
             // abnf1
             // 
@@ -566,6 +581,7 @@
             aof5.Size = new Size(65, 65);
             aof5.TabIndex = 123;
             aof5.TabStop = false;
+            aof5.Visible = false;
             // 
             // aonf5
             // 
@@ -584,6 +600,7 @@
             aof3.Size = new Size(65, 65);
             aof3.TabIndex = 121;
             aof3.TabStop = false;
+            aof3.Visible = false;
             // 
             // aonf3
             // 
@@ -602,6 +619,7 @@
             aof4.Size = new Size(65, 65);
             aof4.TabIndex = 122;
             aof4.TabStop = false;
+            aof4.Visible = false;
             // 
             // aof1
             // 
@@ -611,6 +629,7 @@
             aof1.Size = new Size(65, 65);
             aof1.TabIndex = 119;
             aof1.TabStop = false;
+            aof1.Visible = false;
             // 
             // aonf4
             // 
@@ -629,6 +648,7 @@
             aof2.Size = new Size(65, 65);
             aof2.TabIndex = 120;
             aof2.TabStop = false;
+            aof2.Visible = false;
             // 
             // aonf1
             // 
@@ -677,6 +697,7 @@
             ssmf5.Size = new Size(65, 65);
             ssmf5.TabIndex = 128;
             ssmf5.TabStop = false;
+            ssmf5.Visible = false;
             // 
             // ssmf3
             // 
@@ -686,6 +707,7 @@
             ssmf3.Size = new Size(65, 65);
             ssmf3.TabIndex = 126;
             ssmf3.TabStop = false;
+            ssmf3.Visible = false;
             // 
             // ssmnf5
             // 
@@ -704,6 +726,7 @@
             ssmf4.Size = new Size(65, 65);
             ssmf4.TabIndex = 127;
             ssmf4.TabStop = false;
+            ssmf4.Visible = false;
             // 
             // ssmnf3
             // 
@@ -722,6 +745,7 @@
             ssmf1.Size = new Size(65, 65);
             ssmf1.TabIndex = 124;
             ssmf1.TabStop = false;
+            ssmf1.Visible = false;
             // 
             // ssmnf4
             // 
@@ -740,6 +764,7 @@
             ssmf2.Size = new Size(65, 65);
             ssmf2.TabIndex = 125;
             ssmf2.TabStop = false;
+            ssmf2.Visible = false;
             // 
             // ssmnf1
             // 
@@ -795,6 +820,7 @@
             ef5.Size = new Size(65, 65);
             ef5.TabIndex = 133;
             ef5.TabStop = false;
+            ef5.Visible = false;
             // 
             // ef3
             // 
@@ -804,6 +830,7 @@
             ef3.Size = new Size(65, 65);
             ef3.TabIndex = 131;
             ef3.TabStop = false;
+            ef3.Visible = false;
             // 
             // enf5
             // 
@@ -822,6 +849,7 @@
             ef4.Size = new Size(65, 65);
             ef4.TabIndex = 132;
             ef4.TabStop = false;
+            ef4.Visible = false;
             // 
             // enf3
             // 
@@ -840,6 +868,7 @@
             ef1.Size = new Size(65, 65);
             ef1.TabIndex = 129;
             ef1.TabStop = false;
+            ef1.Visible = false;
             // 
             // enf4
             // 
@@ -858,6 +887,7 @@
             ef2.Size = new Size(65, 65);
             ef2.TabIndex = 130;
             ef2.TabStop = false;
+            ef2.Visible = false;
             // 
             // enf1
             // 
@@ -906,6 +936,7 @@
             endf5.Size = new Size(65, 65);
             endf5.TabIndex = 138;
             endf5.TabStop = false;
+            endf5.Visible = false;
             // 
             // ennf5
             // 
@@ -924,6 +955,7 @@
             endf3.Size = new Size(65, 65);
             endf3.TabIndex = 136;
             endf3.TabStop = false;
+            endf3.Visible = false;
             // 
             // ennf3
             // 
@@ -942,6 +974,7 @@
             endf4.Size = new Size(65, 65);
             endf4.TabIndex = 137;
             endf4.TabStop = false;
+            endf4.Visible = false;
             // 
             // endf1
             // 
@@ -951,6 +984,7 @@
             endf1.Size = new Size(65, 65);
             endf1.TabIndex = 134;
             endf1.TabStop = false;
+            endf1.Visible = false;
             // 
             // ennf4
             // 
@@ -969,6 +1003,7 @@
             endf2.Size = new Size(65, 65);
             endf2.TabIndex = 135;
             endf2.TabStop = false;
+            endf2.Visible = false;
             // 
             // ennf1
             // 
@@ -1084,6 +1119,7 @@
             MaximizeBox = false;
             Name = "Rating";
             ShowIcon = false;
+            Load += Rating_Load;
             grbxWaterR.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)wrf5).EndInit();
             ((System.ComponentModel.ISupportInitialize)wrf3).EndInit();

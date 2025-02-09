@@ -19,6 +19,11 @@ namespace MarketResearchSurvey
             InitializeComponent();
         }
 
+        private void Rating_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = grbxWaterR;
+        }
+
         private void cbxfvp_SelectedIndexChanged(object sender, EventArgs e)
         {
             fvp = cbxfvp.SelectedItem?.ToString() ?? "Other";

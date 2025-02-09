@@ -14,6 +14,8 @@ namespace MarketResearchSurvey
 
         private void MarketResearchSurvey_Load(object sender, EventArgs e)
         {
+            this.ActiveControl = tbxEmail;
+
             if (!string.IsNullOrEmpty(SurveyData.Email))
                 tbxEmail.Text = SurveyData.Email;
 
