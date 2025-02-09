@@ -112,6 +112,24 @@ namespace MarketResearchSurvey
             ssmf3.Click += SSM_Click;
             ssmf4.Click += SSM_Click;
             ssmf5.Click += SSM_Click;
+
+            enf1.Tag = ef1.Tag = "1";
+            enf2.Tag = ef2.Tag = "2";
+            enf3.Tag = ef3.Tag = "3";
+            enf4.Tag = ef4.Tag = "4";
+            enf5.Tag = ef5.Tag = "5";
+
+            enf1.Click += Elasticity_Click;
+            enf2.Click += Elasticity_Click;
+            enf3.Click += Elasticity_Click;
+            enf4.Click += Elasticity_Click;
+            enf5.Click += Elasticity_Click;
+
+            ef1.Click += Elasticity_Click;
+            ef2.Click += Elasticity_Click;
+            ef3.Click += Elasticity_Click;
+            ef4.Click += Elasticity_Click;
+            ef5.Click += Elasticity_Click;
         }
 
         private void WaterResistance_Click(object sender, EventArgs e)
