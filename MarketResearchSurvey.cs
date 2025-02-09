@@ -80,6 +80,6 @@ namespace MarketResearchSurvey
         public static string AntiOdour { get; set; }
         public static string SSM { get; set; }
         public static string Elasticity { get; set; }
-        public static string Elasticity { get; set; }
+        public static string Endurance { get; set; }
     }
 }
