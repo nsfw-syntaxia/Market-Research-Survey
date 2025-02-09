@@ -65,5 +65,12 @@ namespace MarketResearchSurvey
         public static string Income { get; set; }
         public static string Employment { get; set; }
         public static string Education { get; set; }
+        public static string FreqExercise { get; set; }
+        public static string FreqUse { get; set; }
+        public static string LastBuy { get; set; }
+        public static string WhyBuy { get; set; }
+        public static string WhereBuy { get; set; }
+        public static string Design { get; set; }
+        public static string Influence { get; set; }
     }
 }
