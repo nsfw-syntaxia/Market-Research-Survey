@@ -130,6 +130,24 @@ namespace MarketResearchSurvey
             ef3.Click += Elasticity_Click;
             ef4.Click += Elasticity_Click;
             ef5.Click += Elasticity_Click;
+
+            endnf1.Tag = endf1.Tag = "1";
+            endnf2.Tag = endf2.Tag = "2";
+            endnf3.Tag = endf3.Tag = "3";
+            endnf4.Tag = endf4.Tag = "4";
+            endnf5.Tag = endf5.Tag = "5";
+
+            endnf1.Click += Endurance_Click;
+            endnf2.Click += Endurance_Click;
+            endnf3.Click += Endurance_Click;
+            endnf4.Click += Endurance_Click;
+            endnf5.Click += Endurance_Click;
+
+            endf1.Click += Endurance_Click;
+            endf2.Click += Endurance_Click;
+            endf3.Click += Endurance_Click;
+            endf4.Click += Endurance_Click;
+            endf5.Click += Endurance_Click;
         }
 
         private void WaterResistance_Click(object sender, EventArgs e)
