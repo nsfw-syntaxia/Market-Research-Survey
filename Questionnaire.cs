@@ -86,6 +86,7 @@ namespace MarketResearchSurvey
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            /*
             if (!filled(grbxHODYE) || !filled(grbxHODYUSP) || !filled(grbxWDYLBAS))
             {
                 MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -96,7 +97,7 @@ namespace MarketResearchSurvey
             {
                 MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }
+            }*/
 
             if (rbtnEXFREQ1.Checked)
                 SurveyData.FreqExercise = lblHODYE1.Text;

@@ -28,6 +28,7 @@ namespace MarketResearchSurvey
             string email = tbxEmail.Text.Trim();
             string name = tbxName.Text.Trim();
 
+            /*
             if (string.IsNullOrWhiteSpace(tbxEmail.Text) || string.IsNullOrWhiteSpace(tbxName.Text))
             {
                 MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -39,7 +40,7 @@ namespace MarketResearchSurvey
                 MessageBox.Show("Please enter a valid email address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 tbxEmail.Focus();
                 return;
-            }
+            }*/
 
             SurveyData.Email = email;
             SurveyData.Name = name;

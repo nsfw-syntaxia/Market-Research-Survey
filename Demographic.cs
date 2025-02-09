@@ -71,11 +71,12 @@ namespace MarketResearchSurvey
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            /*
             if (!filled(grbxGender) || !filled(grbxAge) || !filled(grbxStatus) || !filled(grbxIncome) || !filled(grbxEmployment) || !filled(grbxEducation))
             {
                 MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }
+            }*/
 
             if (rbtnMale.Checked)
                 SurveyData.Gender = rbtnMale.Text;
