@@ -55,7 +55,7 @@
             rbtn74999 = new RadioButton();
             rbtn49999 = new RadioButton();
             rbtn24999 = new RadioButton();
-            groupBox1 = new GroupBox();
+            grbxEmployment = new GroupBox();
             rbtnPNTSES = new RadioButton();
             rbtnS = new RadioButton();
             rbtnHM = new RadioButton();
@@ -65,7 +65,7 @@
             rbtnEPT = new RadioButton();
             rbtnSE = new RadioButton();
             panelScroll = new Panel();
-            groupBox2 = new GroupBox();
+            grbxEducation = new GroupBox();
             rbtnPNTSHEA = new RadioButton();
             rbtnOHEA = new RadioButton();
             rbtnD = new RadioButton();
@@ -81,8 +81,8 @@
             grbxAge.SuspendLayout();
             grbxStatus.SuspendLayout();
             grbxIncome.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
+            grbxEmployment.SuspendLayout();
+            grbxEducation.SuspendLayout();
             SuspendLayout();
             // 
             // grbxGender
@@ -412,24 +412,24 @@
             rbtn24999.Text = "$10,000-$24,999";
             rbtn24999.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // grbxEmployment
             // 
-            groupBox1.Controls.Add(rbtnPNTSES);
-            groupBox1.Controls.Add(rbtnS);
-            groupBox1.Controls.Add(rbtnHM);
-            groupBox1.Controls.Add(rbtnNLFAJ);
-            groupBox1.Controls.Add(rbtnUE);
-            groupBox1.Controls.Add(rbtnEFT);
-            groupBox1.Controls.Add(rbtnEPT);
-            groupBox1.Controls.Add(rbtnSE);
-            groupBox1.Font = new Font("Bahnschrift SemiBold", 20F, FontStyle.Bold);
-            groupBox1.ForeColor = Color.DarkSlateGray;
-            groupBox1.Location = new Point(12, 611);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(446, 166);
-            groupBox1.TabIndex = 69;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Employment Status";
+            grbxEmployment.Controls.Add(rbtnPNTSES);
+            grbxEmployment.Controls.Add(rbtnS);
+            grbxEmployment.Controls.Add(rbtnHM);
+            grbxEmployment.Controls.Add(rbtnNLFAJ);
+            grbxEmployment.Controls.Add(rbtnUE);
+            grbxEmployment.Controls.Add(rbtnEFT);
+            grbxEmployment.Controls.Add(rbtnEPT);
+            grbxEmployment.Controls.Add(rbtnSE);
+            grbxEmployment.Font = new Font("Bahnschrift SemiBold", 20F, FontStyle.Bold);
+            grbxEmployment.ForeColor = Color.DarkSlateGray;
+            grbxEmployment.Location = new Point(12, 611);
+            grbxEmployment.Name = "grbxEmployment";
+            grbxEmployment.Size = new Size(446, 166);
+            grbxEmployment.TabIndex = 69;
+            grbxEmployment.TabStop = false;
+            grbxEmployment.Text = "Employment Status";
             // 
             // rbtnPNTSES
             // 
@@ -526,25 +526,25 @@
             panelScroll.Size = new Size(10, 1185);
             panelScroll.TabIndex = 70;
             // 
-            // groupBox2
+            // grbxEducation
             // 
-            groupBox2.Controls.Add(rbtnPNTSHEA);
-            groupBox2.Controls.Add(rbtnOHEA);
-            groupBox2.Controls.Add(rbtnD);
-            groupBox2.Controls.Add(rbtnUGD);
-            groupBox2.Controls.Add(rbtnMGD);
-            groupBox2.Controls.Add(rbtnHS);
-            groupBox2.Controls.Add(rbtnLTHS);
-            groupBox2.Controls.Add(rbtnSCU);
-            groupBox2.Controls.Add(rbtnCDC);
-            groupBox2.Font = new Font("Bahnschrift SemiBold", 20F, FontStyle.Bold);
-            groupBox2.ForeColor = Color.DarkSlateGray;
-            groupBox2.Location = new Point(12, 783);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(446, 312);
-            groupBox2.TabIndex = 79;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Highest Education Attained";
+            grbxEducation.Controls.Add(rbtnPNTSHEA);
+            grbxEducation.Controls.Add(rbtnOHEA);
+            grbxEducation.Controls.Add(rbtnD);
+            grbxEducation.Controls.Add(rbtnUGD);
+            grbxEducation.Controls.Add(rbtnMGD);
+            grbxEducation.Controls.Add(rbtnHS);
+            grbxEducation.Controls.Add(rbtnLTHS);
+            grbxEducation.Controls.Add(rbtnSCU);
+            grbxEducation.Controls.Add(rbtnCDC);
+            grbxEducation.Font = new Font("Bahnschrift SemiBold", 20F, FontStyle.Bold);
+            grbxEducation.ForeColor = Color.DarkSlateGray;
+            grbxEducation.Location = new Point(12, 783);
+            grbxEducation.Name = "grbxEducation";
+            grbxEducation.Size = new Size(446, 312);
+            grbxEducation.TabIndex = 79;
+            grbxEducation.TabStop = false;
+            grbxEducation.Text = "Highest Education Attained";
             // 
             // rbtnPNTSHEA
             // 
@@ -667,6 +667,7 @@
             btnBack.TabIndex = 81;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // Demographic
             // 
@@ -677,9 +678,9 @@
             ClientSize = new Size(487, 808);
             Controls.Add(btnBack);
             Controls.Add(btnNext);
-            Controls.Add(groupBox2);
+            Controls.Add(grbxEducation);
             Controls.Add(panelScroll);
-            Controls.Add(groupBox1);
+            Controls.Add(grbxEmployment);
             Controls.Add(grbxIncome);
             Controls.Add(grbxStatus);
             Controls.Add(grbxAge);
@@ -695,10 +696,10 @@
             grbxStatus.PerformLayout();
             grbxIncome.ResumeLayout(false);
             grbxIncome.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            grbxEmployment.ResumeLayout(false);
+            grbxEmployment.PerformLayout();
+            grbxEducation.ResumeLayout(false);
+            grbxEducation.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -731,7 +732,7 @@
         private RadioButton rbtn24999;
         private RadioButton rbtn74999;
         private RadioButton rbtn49999;
-        private GroupBox groupBox1;
+        private GroupBox grbxEmployment;
         private Panel panelScroll;
         private RadioButton rbtnEFT;
         private RadioButton rbtnPNTSES;
@@ -741,7 +742,7 @@
         private RadioButton rbtnNLFAJ;
         private RadioButton rbtnSE;
         private RadioButton rbtnUE;
-        private GroupBox groupBox2;
+        private GroupBox grbxEducation;
         private RadioButton rbtnLTHS;
         private RadioButton rbtnPNTSHEA;
         private RadioButton rbtnOHEA;

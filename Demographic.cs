@@ -15,181 +15,144 @@ namespace MarketResearchSurvey
         public Demographic()
         {
             InitializeComponent();
+            rbtnMale.Focus();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            string gender, ageRange, marital, incomeRange, employment, education;
+            if (!filled(grbxGender))
+            {
+                MessageBox.Show("Please select your gender.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!filled(grbxAge))
+            {
+                MessageBox.Show("Please select your age group.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!filled(grbxStatus))
+            {
+                MessageBox.Show("Please select your marital status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!filled(grbxIncome))
+            {
+                MessageBox.Show("Please select your income range.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!filled(grbxEmployment))
+            {
+                MessageBox.Show("Please select your employment status.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!filled(grbxEducation))
+            {
+                MessageBox.Show("Please select your education level.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             if (rbtnMale.Checked)
-            {
-                gender = rbtnMale.Text;
-            }
+                SurveyData.Gender = rbtnMale.Text;
             else if (rbtnFemale.Checked)
-            {
-                gender = rbtnFemale.Text;
-            }
+                SurveyData.Gender = rbtnFemale.Text;
             else if (rbtnNonBinary.Checked)
-            {
-                gender = rbtnNonBinary.Text;
-            }
+                SurveyData.Gender = rbtnNonBinary.Text;
             else
-            {
-                gender = rbtnGPNTS.Text;
-            }
+                SurveyData.Gender = rbtnGPNTS.Text;
 
             if (rbtn017.Checked)
-            {
-                ageRange = rbtn017.Text;
-            }
+                SurveyData.Age = rbtn017.Text;
             else if (rbtn1824.Checked)
-            {
-                ageRange = rbtn1824.Text;
-            }
+                SurveyData.Age = rbtn1824.Text;
             else if (rbtn2534.Checked)
-            {
-                ageRange = rbtn2534.Text;
-            }
+                SurveyData.Age = rbtn2534.Text;
             else if (rbtn3544.Checked)
-            {
-                ageRange = rbtn3544.Text;
-            }
+                SurveyData.Age = rbtn3544.Text;
             else if (rbtn4554.Checked)
-            {
-                ageRange = rbtn4554.Text;
-            }
+                SurveyData.Age = rbtn4554.Text;
             else if (rbtn5564.Checked)
-            {
-                ageRange = rbtn5564.Text;
-            }
+                SurveyData.Age = rbtn5564.Text;
             else
-            {
-                ageRange = rbtn65.Text;
-            }
+                SurveyData.Age = rbtn65.Text;
 
             if (rbtnSingle.Checked)
-            {
-                marital = rbtnSingle.Text;
-            }
+                SurveyData.MaritalStatus = rbtnSingle.Text;
             else if (rbtnMarried.Checked)
-            {
-                marital = rbtnMarried.Text;
-            }
+                SurveyData.MaritalStatus = rbtnMarried.Text;
             else if (rbtnDivorced.Checked)
-            {
-                marital = rbtnDivorced.Text;
-            }
+                SurveyData.MaritalStatus = rbtnDivorced.Text;
             else if (rbtnWidowed.Checked)
-            {
-                marital = rbtnWidowed.Text;
-            }
+                SurveyData.MaritalStatus = rbtnWidowed.Text;
             else
-            {
-                marital = rbtnPNTSMS.Text;
-            }
+                SurveyData.MaritalStatus = rbtnPNTSMS.Text;
 
             if (rbtn9999.Checked)
-            {
-                incomeRange = rbtn9999.Text;
-            }
+                SurveyData.Income = rbtn9999.Text;
             else if (rbtn24999.Checked)
-            {
-                incomeRange = rbtn24999.Text;
-            }
+                SurveyData.Income = rbtn24999.Text;
             else if (rbtn49999.Checked)
-            {
-                incomeRange = rbtn49999.Text;
-            }
+                SurveyData.Income = rbtn49999.Text;
             else if (rbtn74999.Checked)
-            {
-                incomeRange = rbtn74999.Text;
-            }
+                SurveyData.Income = rbtn74999.Text;
             else if (rbtn99999.Checked)
-            {
-                incomeRange = rbtn99999.Text;
-            }
+                SurveyData.Income = rbtn99999.Text;
             else if (rbtn100000.Checked)
-            {
-                incomeRange = rbtn100000.Text;
-            }
+                SurveyData.Income = rbtn100000.Text;
             else
-            {
-                incomeRange = rbtnPNTSAIR.Text;
-            }
+                SurveyData.Income = rbtnPNTSAIR.Text;
 
             if (rbtnEFT.Checked)
-            {
-                employment = rbtnEFT.Text;
-            }
+                SurveyData.Employment = rbtnEFT.Text;
             else if (rbtnEPT.Checked)
-            {
-                employment = rbtnEPT.Text;
-            }
+                SurveyData.Employment = rbtnEPT.Text;
             else if (rbtnSE.Checked)
-            {
-                employment = rbtnSE.Text;
-            }
+                SurveyData.Employment = rbtnSE.Text;
             else if (rbtnUE.Checked)
-            {
-                employment = rbtnUE.Text;
-            }
+                SurveyData.Employment = rbtnUE.Text;
             else if (rbtnNLFAJ.Checked)
-            {
-                employment = rbtnNLFAJ.Text;
-            }
+                SurveyData.Employment = rbtnNLFAJ.Text;
             else if (rbtnHM.Checked)
-            {
-                employment = rbtnHM.Text;
-            }
+                SurveyData.Employment = rbtnHM.Text;
             else if (rbtnS.Checked)
-            {
-                employment = rbtnS.Text;
-            }
+                SurveyData.Employment = rbtnS.Text;
             else
-            {
-                employment = rbtnPNTSES.Text;
-            }
+                SurveyData.Employment = rbtnPNTSES.Text;
 
             if (rbtnLTHS.Checked)
-            {
-                education = rbtnLTHS.Text;
-            }
+                SurveyData.Education = rbtnLTHS.Text;
             else if (rbtnHS.Checked)
-            {
-                education = rbtnHS.Text;
-            }
+                SurveyData.Education = rbtnHS.Text;
             else if (rbtnSCU.Checked)
-            {
-                education = rbtnSCU.Text;
-            }
+                SurveyData.Education = rbtnSCU.Text;
             else if (rbtnCDC.Checked)
-            {
-                education = rbtnCDC.Text;
-            }
+                SurveyData.Education = rbtnCDC.Text;
             else if (rbtnUGD.Checked)
-            {
-                education = rbtnUGD.Text;
-            }
+                SurveyData.Education = rbtnUGD.Text;
             else if (rbtnMGD.Checked)
-            {
-                education = rbtnMGD.Text;
-            }
+                SurveyData.Education = rbtnMGD.Text;
             else if (rbtnD.Checked)
-            {
-                education = rbtnD.Text;
-            }
+                SurveyData.Education = rbtnD.Text;
             else if (rbtnOHEA.Checked)
-            {
-                education = rbtnOHEA.Text;
-            }
+                SurveyData.Education = rbtnOHEA.Text;
             else
-            {
-                education = rbtnPNTSHEA.Text;
-            }
+                SurveyData.Education = rbtnPNTSHEA.Text;
 
             this.Hide();
             Questionnaire questionnaire = new Questionnaire();
             questionnaire.ShowDialog();
+            this.Close();
+        }
+
+        private bool filled(GroupBox groupBox)
+        {
+            return groupBox.Controls.OfType<RadioButton>().Any(r => r.Checked);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MarketResearchSurvey surveyForm = new MarketResearchSurvey();
+            surveyForm.ShowDialog();
             this.Close();
         }
     }
