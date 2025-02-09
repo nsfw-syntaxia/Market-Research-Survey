@@ -75,8 +75,8 @@
             rbtnLTHS = new RadioButton();
             rbtnSCU = new RadioButton();
             rbtnCDC = new RadioButton();
-            btnNext = new Button();
             btnBack = new Button();
+            btnNext = new Button();
             grbxGender.SuspendLayout();
             grbxAge.SuspendLayout();
             grbxStatus.SuspendLayout();
@@ -645,29 +645,29 @@
             rbtnCDC.Text = "College diploma / Certificate";
             rbtnCDC.UseVisualStyleBackColor = true;
             // 
-            // btnNext
-            // 
-            btnNext.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNext.ForeColor = Color.DarkSlateGray;
-            btnNext.Location = new Point(246, 1126);
-            btnNext.Name = "btnNext";
-            btnNext.Size = new Size(75, 28);
-            btnNext.TabIndex = 80;
-            btnNext.Text = "Next";
-            btnNext.UseVisualStyleBackColor = true;
-            btnNext.Click += btnNext_Click;
-            // 
             // btnBack
             // 
             btnBack.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.DarkSlateGray;
-            btnBack.Location = new Point(152, 1126);
+            btnBack.Location = new Point(151, 1125);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(75, 28);
-            btnBack.TabIndex = 81;
+            btnBack.TabIndex = 138;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
+            // 
+            // btnNext
+            // 
+            btnNext.Font = new Font("Bahnschrift SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext.ForeColor = Color.DarkSlateGray;
+            btnNext.Location = new Point(245, 1125);
+            btnNext.Name = "btnNext";
+            btnNext.Size = new Size(75, 28);
+            btnNext.TabIndex = 137;
+            btnNext.Text = "Next";
+            btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // Demographic
             // 
@@ -688,6 +688,7 @@
             MaximizeBox = false;
             Name = "Demographic";
             ShowIcon = false;
+            Load += Demographic_Load;
             grbxGender.ResumeLayout(false);
             grbxGender.PerformLayout();
             grbxAge.ResumeLayout(false);
@@ -752,7 +753,7 @@
         private RadioButton rbtnUGD;
         private RadioButton rbtnSCU;
         private RadioButton rbtnCDC;
-        private Button btnNext;
         private Button btnBack;
+        private Button btnNext;
     }
 }

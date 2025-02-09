@@ -15,39 +15,65 @@ namespace MarketResearchSurvey
         public Demographic()
         {
             InitializeComponent();
-            rbtnMale.Focus();
+        }
+
+        private void Demographic_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = grbxGender;
+
+            if (SurveyData.Gender == rbtnMale.Text) rbtnMale.Checked = true;
+            else if (SurveyData.Gender == rbtnFemale.Text) rbtnFemale.Checked = true;
+            else if (SurveyData.Gender == rbtnNonBinary.Text) rbtnNonBinary.Checked = true;
+            else if (SurveyData.Gender == rbtnGPNTS.Text) rbtnGPNTS.Checked = true;
+
+            if (SurveyData.Age == rbtn017.Text) rbtn017.Checked = true;
+            else if (SurveyData.Age == rbtn1824.Text) rbtn1824.Checked = true;
+            else if (SurveyData.Age == rbtn2534.Text) rbtn2534.Checked = true;
+            else if (SurveyData.Age == rbtn3544.Text) rbtn3544.Checked = true;
+            else if (SurveyData.Age == rbtn4554.Text) rbtn4554.Checked = true;
+            else if (SurveyData.Age == rbtn5564.Text) rbtn5564.Checked = true;
+            else if (SurveyData.Age == rbtn65.Text) rbtn65.Checked = true;
+
+
+            if (SurveyData.MaritalStatus == rbtnSingle.Text) rbtnSingle.Checked = true;
+            else if (SurveyData.MaritalStatus == rbtnMarried.Text) rbtnMarried.Checked = true;
+            else if (SurveyData.MaritalStatus == rbtnDivorced.Text) rbtnDivorced.Checked = true;
+            else if (SurveyData.MaritalStatus == rbtnWidowed.Text) rbtnWidowed.Checked = true;
+            else if (SurveyData.MaritalStatus == rbtnPNTSMS.Text) rbtnPNTSMS.Checked = true;
+
+            if (SurveyData.Income == rbtn9999.Text) rbtn9999.Checked = true;
+            else if (SurveyData.Income == rbtn24999.Text) rbtn24999.Checked = true;
+            else if (SurveyData.Income == rbtn49999.Text) rbtn49999.Checked = true;
+            else if (SurveyData.Income == rbtn74999.Text) rbtn74999.Checked = true;
+            else if (SurveyData.Income == rbtn99999.Text) rbtn99999.Checked = true;
+            else if (SurveyData.Income == rbtn100000.Text) rbtn100000.Checked = true;
+            else if (SurveyData.Income == rbtnPNTSAIR.Text) rbtnPNTSAIR.Checked = true;
+
+            if (SurveyData.Employment == rbtnEFT.Text) rbtnEFT.Checked = true;
+            else if (SurveyData.Employment == rbtnEPT.Text) rbtnEPT.Checked = true;
+            else if (SurveyData.Employment == rbtnSE.Text) rbtnSE.Checked = true;
+            else if (SurveyData.Employment == rbtnUE.Text) rbtnUE.Checked = true;
+            else if (SurveyData.Employment == rbtnNLFAJ.Text) rbtnNLFAJ.Checked = true;
+            else if (SurveyData.Employment == rbtnHM.Text) rbtnHM.Checked = true;
+            else if (SurveyData.Employment == rbtnS.Text) rbtnS.Checked = true;
+            else if (SurveyData.Employment == rbtnPNTSES.Text) rbtnPNTSES.Checked = true;
+
+            if (SurveyData.Education == rbtnLTHS.Text) rbtnLTHS.Checked = true;
+            else if (SurveyData.Education == rbtnHS.Text) rbtnHS.Checked = true;
+            else if (SurveyData.Education == rbtnSCU.Text) rbtnSCU.Checked = true;
+            else if (SurveyData.Education == rbtnCDC.Text) rbtnCDC.Checked = true;
+            else if (SurveyData.Education == rbtnUGD.Text) rbtnUGD.Checked = true;
+            else if (SurveyData.Education == rbtnMGD.Text) rbtnMGD.Checked = true;
+            else if (SurveyData.Education == rbtnD.Text) rbtnD.Checked = true;
+            else if (SurveyData.Education == rbtnOHEA.Text) rbtnOHEA.Checked = true;
+            else if (SurveyData.Education == rbtnPNTSHEA.Text) rbtnPNTSHEA.Checked = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (!filled(grbxGender))
+            if (!filled(grbxGender) || !filled(grbxAge) || !filled(grbxStatus) || !filled(grbxIncome) || !filled(grbxEmployment) || !filled(grbxEducation))
             {
-                MessageBox.Show("Please select your gender.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!filled(grbxAge))
-            {
-                MessageBox.Show("Please select your age group.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!filled(grbxStatus))
-            {
-                MessageBox.Show("Please select your marital status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!filled(grbxIncome))
-            {
-                MessageBox.Show("Please select your income range.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!filled(grbxEmployment))
-            {
-                MessageBox.Show("Please select your employment status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!filled(grbxEducation))
-            {
-                MessageBox.Show("Please select your highest education attained.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in all fields before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

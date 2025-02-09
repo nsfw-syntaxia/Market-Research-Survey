@@ -17,6 +17,11 @@ namespace MarketResearchSurvey
             InitializeComponent();
         }
 
+        private void Questionnaire_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = grbxHODYE;
+        }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
             string freqExercise, freqUse, lastBuy;
@@ -212,6 +217,14 @@ namespace MarketResearchSurvey
             this.Hide();
             Rating rating = new Rating();
             rating.ShowDialog();
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Demographic demographic = new Demographic();
+            demographic.ShowDialog();
             this.Close();
         }
     }

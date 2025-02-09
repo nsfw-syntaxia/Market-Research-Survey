@@ -10,7 +10,15 @@ namespace MarketResearchSurvey
         public MarketResearchSurvey()
         {
             InitializeComponent();
-            tbxEmail.Focus();
+        }
+
+        private void MarketResearchSurvey_Load(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SurveyData.Email))
+                tbxEmail.Text = SurveyData.Email;
+
+            if (!string.IsNullOrEmpty(SurveyData.Name))
+                tbxName.Text = SurveyData.Name;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -49,8 +57,8 @@ namespace MarketResearchSurvey
 
     public static class SurveyData
     {
-        public static string Email { get; set; }
-        public static string Name { get; set; }
+        public static string Email { get; set; } = "";
+        public static string Name { get; set; } = "";
         public static string Gender { get; set; }
         public static string Age { get; set; }
         public static string MaritalStatus { get; set; }

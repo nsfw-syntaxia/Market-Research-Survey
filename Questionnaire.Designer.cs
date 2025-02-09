@@ -994,6 +994,7 @@
             btnBack.TabIndex = 136;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnNext
             // 
@@ -1027,6 +1028,7 @@
             MaximizeBox = false;
             Name = "Questionnaire";
             ShowIcon = false;
+            Load += Questionnaire_Load;
             grbxHODYE.ResumeLayout(false);
             grbxHODYE.PerformLayout();
             grbxHODYUSP.ResumeLayout(false);

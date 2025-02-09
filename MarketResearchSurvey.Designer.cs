@@ -127,6 +127,7 @@
             MaximizeBox = false;
             Name = "MarketResearchSurvey";
             ShowIcon = false;
+            Load += MarketResearchSurvey_Load;
             ResumeLayout(false);
             PerformLayout();
         }
