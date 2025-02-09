@@ -58,6 +58,24 @@ namespace MarketResearchSurvey
             cf3.Click += Cooling_Click;
             cf4.Click += Cooling_Click;
             cf5.Click += Cooling_Click;
+
+            abnf1.Tag = ab1.Tag = "1";
+            abf2.Tag = ab2.Tag = "2";
+            abf3.Tag = ab3.Tag = "3";
+            abf4.Tag = ab4.Tag = "4";
+            abf5.Tag = ab5.Tag = "5";
+
+            abnf1.Click += AntiBacteria_Click;
+            abnf2.Click += AntiBacteria_Click;
+            abnf3.Click += AntiBacteria_Click;
+            abnf4.Click += AntiBacteria_Click;
+            abnf5.Click += AntiBacteria_Click;
+
+            abf1.Click += AntiBacteria_Click;
+            abf2.Click += AntiBacteria_Click;
+            abf3.Click += AntiBacteria_Click;
+            abf4.Click += AntiBacteria_Click;
+            abf5.Click += AntiBacteria_Click;
         }
 
         private void WaterResistance_Click(object sender, EventArgs e)
