@@ -60,10 +60,10 @@ namespace MarketResearchSurvey
             cf5.Click += Cooling_Click;
 
             abnf1.Tag = abf1.Tag = "1";
-            abf2.Tag = abf2.Tag = "2";
-            abf3.Tag = abf3.Tag = "3";
-            abf4.Tag = abf4.Tag = "4";
-            abf5.Tag = abf5.Tag = "5";
+            abnf2.Tag = abf2.Tag = "2";
+            abnf3.Tag = abf3.Tag = "3";
+            abnf4.Tag = abf4.Tag = "4";
+            abnf5.Tag = abf5.Tag = "5";
 
             abnf1.Click += AntiBacteria_Click;
             abnf2.Click += AntiBacteria_Click;
