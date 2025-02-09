@@ -1001,7 +1001,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(487, 770);
+            ClientSize = new Size(487, 795);
             Controls.Add(btnNext);
             Controls.Add(grbxInfluence);
             Controls.Add(grbxDesign);

@@ -1052,7 +1052,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(487, 836);
+            ClientSize = new Size(487, 752);
             Controls.Add(chlbxfvp);
             Controls.Add(label1);
             Controls.Add(btnSubmit);
