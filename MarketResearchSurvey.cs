@@ -74,5 +74,12 @@ namespace MarketResearchSurvey
         public static string WhereBuy { get; set; }
         public static string Design { get; set; }
         public static string Influence { get; set; }
+        public static string WaterResistance { get; set; }
+        public static string Cooling { get; set; }
+        public static string AntiBacteria { get; set; }
+        public static string AntiOdour { get; set; }
+        public static string SSM { get; set; }
+        public static string Elasticity { get; set; }
+        public static string Elasticity { get; set; }
     }
 }
