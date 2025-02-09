@@ -36,6 +36,28 @@ namespace MarketResearchSurvey
             else if (SurveyData.FreqExercise == lblHODYE8.Text) rbtnEXFREQ8.Checked = true;
             else if (SurveyData.FreqExercise == lblHODYE9.Text) rbtnEXFREQ9.Checked = true;
             else if (SurveyData.FreqExercise == lblHODYE10.Text) rbtnEXFREQ10.Checked = true;
+
+            if (SurveyData.FreqUse == lblHODYUSP1.Text) rbtnUFREQ1.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP2.Text) rbtnUFREQ2.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP3.Text) rbtnUFREQ3.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP4.Text) rbtnUFREQ4.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP5.Text) rbtnUFREQ5.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP6.Text) rbtnUFREQ6.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP7.Text) rbtnUFREQ7.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP8.Text) rbtnUFREQ8.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP9.Text) rbtnUFREQ9.Checked = true;
+            else if (SurveyData.FreqUse == lblHODYUSP10.Text) rbtnUFREQ10.Checked = true;
+
+            if (SurveyData.LastBuy == rbtnLTAM.Text) rbtnLTAM.Checked = true;
+            else if (SurveyData.LastBuy == rbtnB16M.Text) rbtnB16M.Checked = true;
+            else if (SurveyData.LastBuy == rbtnB6M1Y.Text) rbtnB6M1Y.Checked = true;
+            else if (SurveyData.LastBuy == rbtnMT1Y.Text) rbtnMT1Y.Checked = true;
+            else if (SurveyData.LastBuy == rbtnIDNR.Text) rbtnIDNR.Checked = true;
+
+            var whyBuySelected = (SurveyData.WhyBuy ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+            var whereBuySelected = (SurveyData.WhereBuy ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+            var designSelected = (SurveyData.Design ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+            var influenceSelected = (SurveyData.Influence ?? "").Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
