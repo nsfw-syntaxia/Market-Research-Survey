@@ -12,6 +12,11 @@ namespace MarketResearchSurvey
 {
     public partial class Questionnaire : Form
     {
+        List<string> whyBuy = new List<string>();
+        List<string> whereBuy = new List<string>();
+        List<string> design = new List<string>();
+        List<string> influence = new List<string>();
+
         public Questionnaire()
         {
             InitializeComponent();
@@ -20,199 +25,122 @@ namespace MarketResearchSurvey
         private void Questionnaire_Load(object sender, EventArgs e)
         {
             this.ActiveControl = grbxHODYE;
+
+            if (SurveyData.FreqExercise == lblHODYE1.Text) rbtnEXFREQ1.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE2.Text) rbtnEXFREQ2.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE3.Text) rbtnEXFREQ3.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE4.Text) rbtnEXFREQ4.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE5.Text) rbtnEXFREQ5.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE6.Text) rbtnEXFREQ6.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE7.Text) rbtnEXFREQ7.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE8.Text) rbtnEXFREQ8.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE9.Text) rbtnEXFREQ9.Checked = true;
+            else if (SurveyData.FreqExercise == lblHODYE10.Text) rbtnEXFREQ10.Checked = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            string freqExercise, freqUse, lastBuy;
-            string whyBuy = "", whereBuy = "", design = "", influence = "";
-
             if (rbtnEXFREQ1.Checked)
-            {
-                freqExercise = "1";
-            }
+                SurveyData.FreqExercise = lblHODYE1.Text;
             else if (rbtnEXFREQ2.Checked)
-            {
-                freqExercise = "2";
-            }
+                SurveyData.FreqExercise = lblHODYE2.Text;
             else if (rbtnEXFREQ3.Checked)
-            {
-                freqExercise = "3";
-            }
+                SurveyData.FreqExercise = lblHODYE3.Text;
             else if (rbtnEXFREQ4.Checked)
-            {
-                freqExercise = "4";
-            }
+                SurveyData.FreqExercise = lblHODYE4.Text;
             else if (rbtnEXFREQ5.Checked)
-            {
-                freqExercise = "5";
-            }
+                SurveyData.FreqExercise = lblHODYE5.Text;
             else if (rbtnEXFREQ6.Checked)
-            {
-                freqExercise = "6";
-            }
+                SurveyData.FreqExercise = lblHODYE6.Text;
             else if (rbtnEXFREQ7.Checked)
-            {
-                freqExercise = "7";
-            }
+                SurveyData.FreqExercise = lblHODYE7.Text;
             else if (rbtnEXFREQ8.Checked)
-            {
-                freqExercise = "8";
-            }
+                SurveyData.FreqExercise = lblHODYE8.Text;
             else if (rbtnEXFREQ9.Checked)
-            {
-                freqExercise = "9";
-            }
+                SurveyData.FreqExercise = lblHODYE9.Text;
             else
-            {
-                freqExercise = "10";
-            }
+                SurveyData.FreqExercise = lblHODYE10.Text;
 
             if (rbtnUFREQ1.Checked)
-            {
-                freqUse = "1";
-            }
+                SurveyData.FreqUse = lblHODYUSP1.Text;
             else if (rbtnUFREQ2.Checked)
-            {
-                freqUse = "2";
-            }
+                SurveyData.FreqUse = lblHODYUSP2.Text;
             else if (rbtnUFREQ3.Checked)
-            {
-                freqUse = "3";
-            }
+                SurveyData.FreqUse = lblHODYUSP3.Text;
             else if (rbtnUFREQ4.Checked)
-            {
-                freqUse = "4";
-            }
+                SurveyData.FreqUse = lblHODYUSP4.Text;
             else if (rbtnUFREQ5.Checked)
-            {
-                freqUse = "5";
-            }
+                SurveyData.FreqUse = lblHODYUSP5.Text;
             else if (rbtnUFREQ6.Checked)
-            {
-                freqUse = "6";
-            }
+                SurveyData.FreqUse = lblHODYUSP6.Text;
             else if (rbtnUFREQ7.Checked)
-            {
-                freqUse = "7";
-            }
+                SurveyData.FreqUse = lblHODYUSP7.Text;
             else if (rbtnUFREQ8.Checked)
-            {
-                freqUse = "8";
-            }
+                SurveyData.FreqUse = lblHODYUSP8.Text;
             else if (rbtnUFREQ9.Checked)
-            {
-                freqUse = "9";
-            }
+                SurveyData.FreqUse = lblHODYUSP9.Text;
             else
-            {
-                freqUse = "10";
-            }
+                SurveyData.FreqUse = lblHODYUSP10.Text;
 
             if (rbtnLTAM.Checked)
-            {
-                lastBuy = rbtnLTAM.Text;
-            }
+                SurveyData.LastBuy = rbtnLTAM.Text;
             else if (rbtnB16M.Checked)
-            {
-                lastBuy = rbtnB16M.Text;
-            }
+                SurveyData.LastBuy = rbtnB16M.Text;
             else if (rbtnB6M1Y.Checked)
-            {
-                lastBuy = rbtnB6M1Y.Text;
-            }
+                SurveyData.LastBuy = rbtnB6M1Y.Text;
             else if (rbtnMT1Y.Checked)
-            {
-                lastBuy = rbtnMT1Y.Text;
-            }
+                SurveyData.LastBuy = rbtnMT1Y.Text;
             else
-            {
-                lastBuy = rbtnIDNR.Text;
-            }
+                SurveyData.LastBuy = rbtnIDNR.Text;
 
-            if (chbxGF.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxGF.Text;
-            }
-            if (chbxR.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxR.Text;
-            }
-            if (chbxH.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxH.Text;
-            }
-            if (chbxOF.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxOF.Text;
-            }
-            if (chbxS.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxS.Text;
-            }
-            if (chbxOWB.Checked == true)
-            {
-                whyBuy = whyBuy + " " + chbxOWB.Text;
-            }
+            if (chbxGF.Checked)
+                whyBuy.Add(chbxGF.Text);
+            if (chbxR.Checked)
+                whyBuy.Add(chbxR.Text);
+            if (chbxH.Checked)
+                whyBuy.Add(chbxH.Text);
+            if (chbxOF.Checked)
+                whyBuy.Add(chbxOF.Text);
+            if (chbxS.Checked)
+                whyBuy.Add(chbxS.Text);
+            if (chbxOWB.Checked)
+                whyBuy.Add(chbxOWB.Text);
 
-            if (chbxRS.Checked == true)
-            {
-                whereBuy = whereBuy + " " + chbxRS.Text;
-            }
-            if (chbxDS.Checked == true)
-            {
-                whereBuy = whereBuy + " " + chbxDS.Text;
-            }
-            if (chbxMBR.Checked == true)
-            {
-                whereBuy = whereBuy + " " + chbxMBR.Text;
-            }
-            if (chbxOnline.Checked == true)
-            {
-                whereBuy = whereBuy + " " + chbxOnline.Text;
-            }
-            if (chbxOWBF.Checked == true)
-            {
-                whereBuy = whereBuy + " " + chbxOWBF.Text;
-            }
+            if (chbxRS.Checked)
+                whereBuy.Add(chbxRS.Text);
+            if (chbxDS.Checked)
+                whereBuy.Add(chbxDS.Text);
+            if (chbxMBR.Checked)
+                whereBuy.Add(chbxMBR.Text);
+            if (chbxOnline.Checked)
+                whereBuy.Add(chbxOnline.Text);
+            if (chbxOWBF.Checked)
+                whereBuy.Add(chbxOWBF.Text);
 
-            if (chbxMinimalist.Checked == true)
-            {
-                design = design + " " + chbxMinimalist.Text;
-            }
-            if (chbxBCAD.Checked == true)
-            {
-                design = design + " " + chbxBCAD.Text;
-            }
-            if (chbxWSAPO.Checked == true)
-            {
-                design = design + " " + chbxWSAPO.Text;
-            }
-            if (chbxOPDS.Checked == true)
-            {
-                design = design + " " + chbxOPDS.Text;
-            }
+            if (chbxMinimalist.Checked)
+                design.Add(chbxMinimalist.Text);
+            if (chbxBCAD.Checked)
+                design.Add(chbxBCAD.Text);
+            if (chbxWSAPO.Checked)
+                design.Add(chbxWSAPO.Text);
+            if (chbxOPDS.Checked)
+                design.Add(chbxOPDS.Text);
 
-            if (chbxPrice.Checked == true)
-            {
-                influence = influence + " " + chbxPrice.Text;
-            }
-            if (chbxQuality.Checked == true)
-            {
-                influence = influence + " " + chbxQuality.Text;
-            }
-            if (chbxValue.Checked == true)
-            {
-                influence = influence + " " + chbxValue.Text;
-            }
-            if (chbxBrand.Checked == true)
-            {
-                influence = influence + " " + chbxBrand.Text;
-            }
-            if (chbxOICB.Checked == true)
-            {
-                influence = influence + " " + chbxOICB.Text;
-            }
+            if (chbxPrice.Checked)
+                influence.Add(chbxPrice.Text);
+            if (chbxQuality.Checked)
+                influence.Add(chbxQuality.Text);
+            if (chbxValue.Checked)
+                influence.Add(chbxValue.Text);
+            if (chbxBrand.Checked)
+                influence.Add(chbxBrand.Text);
+            if (chbxOICB.Checked)
+                influence.Add(chbxOICB.Text);
+
+            SurveyData.WhyBuy = string.Join(", ", whyBuy);
+            SurveyData.WhereBuy = string.Join(", ", whereBuy);
+            SurveyData.Design = string.Join(", ", design);
+            SurveyData.Influence = string.Join(", ", influence);
 
             this.Hide();
             Rating rating = new Rating();
