@@ -98,21 +98,21 @@
             enf1 = new PictureBox();
             enf2 = new PictureBox();
             grbxEndurance = new GroupBox();
-            endf5 = new PictureBox();
-            endnf5 = new PictureBox();
+            endf1 = new PictureBox();
+            endnf1 = new PictureBox();
+            endf2 = new PictureBox();
+            endnf2 = new PictureBox();
             endf3 = new PictureBox();
             endnf3 = new PictureBox();
             endf4 = new PictureBox();
-            endf1 = new PictureBox();
             endnf4 = new PictureBox();
-            endf2 = new PictureBox();
-            endnf1 = new PictureBox();
-            endnf2 = new PictureBox();
+            endf5 = new PictureBox();
+            endnf5 = new PictureBox();
             lblfvp = new Label();
             cbxfvp = new ComboBox();
             btnSubmit = new Button();
             label1 = new Label();
-            chlbxfvp = new CheckedListBox();
+            chlbxintrs = new CheckedListBox();
             btnBack = new Button();
             grbxWaterR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wrf5).BeginInit();
@@ -181,16 +181,16 @@
             ((System.ComponentModel.ISupportInitialize)enf1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)enf2).BeginInit();
             grbxEndurance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)endf5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)endnf5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endf1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endnf1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endf2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endnf2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)endf3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)endnf3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)endf4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)endf1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)endnf4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)endf2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)endnf1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)endnf2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endf5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)endnf5).BeginInit();
             SuspendLayout();
             // 
             // lblNote
@@ -928,24 +928,43 @@
             grbxEndurance.TabStop = false;
             grbxEndurance.Text = "Endurance";
             // 
-            // endf5
+            // endf1
             // 
-            endf5.BackgroundImage = (Image)resources.GetObject("endf5.BackgroundImage");
-            endf5.Location = new Point(333, 44);
-            endf5.Name = "endf5";
-            endf5.Size = new Size(65, 65);
-            endf5.TabIndex = 138;
-            endf5.TabStop = false;
-            endf5.Visible = false;
+            endf1.BackgroundImage = (Image)resources.GetObject("endf1.BackgroundImage");
+            endf1.Location = new Point(49, 44);
+            endf1.Name = "endf1";
+            endf1.Size = new Size(65, 65);
+            endf1.TabIndex = 134;
+            endf1.TabStop = false;
+            endf1.Visible = false;
             // 
-            // endnf5
+            // endnf1
             // 
-            endnf5.BackgroundImage = (Image)resources.GetObject("endnf5.BackgroundImage");
-            endnf5.Location = new Point(333, 44);
-            endnf5.Name = "endnf5";
-            endnf5.Size = new Size(65, 65);
-            endnf5.TabIndex = 103;
-            endnf5.TabStop = false;
+            endnf1.BackgroundImage = (Image)resources.GetObject("endnf1.BackgroundImage");
+            endnf1.Location = new Point(49, 44);
+            endnf1.Name = "endnf1";
+            endnf1.Size = new Size(65, 65);
+            endnf1.TabIndex = 99;
+            endnf1.TabStop = false;
+            // 
+            // endf2
+            // 
+            endf2.BackgroundImage = (Image)resources.GetObject("endf2.BackgroundImage");
+            endf2.Location = new Point(120, 44);
+            endf2.Name = "endf2";
+            endf2.Size = new Size(65, 65);
+            endf2.TabIndex = 135;
+            endf2.TabStop = false;
+            endf2.Visible = false;
+            // 
+            // endnf2
+            // 
+            endnf2.BackgroundImage = (Image)resources.GetObject("endnf2.BackgroundImage");
+            endnf2.Location = new Point(120, 44);
+            endnf2.Name = "endnf2";
+            endnf2.Size = new Size(65, 65);
+            endnf2.TabIndex = 100;
+            endnf2.TabStop = false;
             // 
             // endf3
             // 
@@ -976,16 +995,6 @@
             endf4.TabStop = false;
             endf4.Visible = false;
             // 
-            // endf1
-            // 
-            endf1.BackgroundImage = (Image)resources.GetObject("endf1.BackgroundImage");
-            endf1.Location = new Point(49, 44);
-            endf1.Name = "endf1";
-            endf1.Size = new Size(65, 65);
-            endf1.TabIndex = 134;
-            endf1.TabStop = false;
-            endf1.Visible = false;
-            // 
             // endnf4
             // 
             endnf4.BackgroundImage = (Image)resources.GetObject("endnf4.BackgroundImage");
@@ -995,33 +1004,24 @@
             endnf4.TabIndex = 102;
             endnf4.TabStop = false;
             // 
-            // endf2
+            // endf5
             // 
-            endf2.BackgroundImage = (Image)resources.GetObject("endf2.BackgroundImage");
-            endf2.Location = new Point(120, 44);
-            endf2.Name = "endf2";
-            endf2.Size = new Size(65, 65);
-            endf2.TabIndex = 135;
-            endf2.TabStop = false;
-            endf2.Visible = false;
+            endf5.BackgroundImage = (Image)resources.GetObject("endf5.BackgroundImage");
+            endf5.Location = new Point(333, 44);
+            endf5.Name = "endf5";
+            endf5.Size = new Size(65, 65);
+            endf5.TabIndex = 138;
+            endf5.TabStop = false;
+            endf5.Visible = false;
             // 
-            // endnf1
+            // endnf5
             // 
-            endnf1.BackgroundImage = (Image)resources.GetObject("endnf1.BackgroundImage");
-            endnf1.Location = new Point(49, 44);
-            endnf1.Name = "endnf1";
-            endnf1.Size = new Size(65, 65);
-            endnf1.TabIndex = 99;
-            endnf1.TabStop = false;
-            // 
-            // endnf2
-            // 
-            endnf2.BackgroundImage = (Image)resources.GetObject("endnf2.BackgroundImage");
-            endnf2.Location = new Point(120, 44);
-            endnf2.Name = "endnf2";
-            endnf2.Size = new Size(65, 65);
-            endnf2.TabIndex = 100;
-            endnf2.TabStop = false;
+            endnf5.BackgroundImage = (Image)resources.GetObject("endnf5.BackgroundImage");
+            endnf5.Location = new Point(333, 44);
+            endnf5.Name = "endnf5";
+            endnf5.Size = new Size(65, 65);
+            endnf5.TabIndex = 103;
+            endnf5.TabStop = false;
             // 
             // lblfvp
             // 
@@ -1069,18 +1069,18 @@
             label1.TabIndex = 248;
             label1.Text = "What are your other interests? (Select all that apply.)\r\n";
             // 
-            // chlbxfvp
+            // chlbxintrs
             // 
-            chlbxfvp.BackColor = Color.LightSteelBlue;
-            chlbxfvp.BorderStyle = BorderStyle.None;
-            chlbxfvp.Font = new Font("Bahnschrift SemiLight", 12.75F);
-            chlbxfvp.ForeColor = Color.DarkSlateGray;
-            chlbxfvp.FormattingEnabled = true;
-            chlbxfvp.Items.AddRange(new object[] { "Arts & Entertainment", "Autos & Vehicles", "Beauty & Fitness", "Books & Literature", "Business & Industrial", "Computers & Electronics", "E-Sports", "Finance", "Food & Drink", "Games", "Hobbies & Leisure", "Home & Garden", "Internet & Telecom", "Jobs & Education", "Law & Government", "Motorsports", "News", "Online Communities", "People & Society", "Pets & Animals", "Real Estate", "Reference", "Science", "Shopping", "Travel", "World Localities" });
-            chlbxfvp.Location = new Point(12, 1159);
-            chlbxfvp.Name = "chlbxfvp";
-            chlbxfvp.Size = new Size(446, 69);
-            chlbxfvp.TabIndex = 250;
+            chlbxintrs.BackColor = Color.LightSteelBlue;
+            chlbxintrs.BorderStyle = BorderStyle.None;
+            chlbxintrs.Font = new Font("Bahnschrift SemiLight", 12.75F);
+            chlbxintrs.ForeColor = Color.DarkSlateGray;
+            chlbxintrs.FormattingEnabled = true;
+            chlbxintrs.Items.AddRange(new object[] { "Arts & Entertainment", "Autos & Vehicles", "Beauty & Fitness", "Books & Literature", "Business & Industrial", "Computers & Electronics", "E-Sports", "Finance", "Food & Drink", "Games", "Hobbies & Leisure", "Home & Garden", "Internet & Telecom", "Jobs & Education", "Law & Government", "Motorsports", "News", "Online Communities", "People & Society", "Pets & Animals", "Real Estate", "Reference", "Science", "Shopping", "Travel", "World Localities" });
+            chlbxintrs.Location = new Point(12, 1159);
+            chlbxintrs.Name = "chlbxintrs";
+            chlbxintrs.Size = new Size(446, 69);
+            chlbxintrs.TabIndex = 250;
             // 
             // btnBack
             // 
@@ -1102,7 +1102,7 @@
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(487, 752);
             Controls.Add(btnBack);
-            Controls.Add(chlbxfvp);
+            Controls.Add(chlbxintrs);
             Controls.Add(label1);
             Controls.Add(btnSubmit);
             Controls.Add(cbxfvp);
@@ -1187,16 +1187,16 @@
             ((System.ComponentModel.ISupportInitialize)enf1).EndInit();
             ((System.ComponentModel.ISupportInitialize)enf2).EndInit();
             grbxEndurance.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)endf5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)endnf5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endf1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endnf1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endf2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endnf2).EndInit();
             ((System.ComponentModel.ISupportInitialize)endf3).EndInit();
             ((System.ComponentModel.ISupportInitialize)endnf3).EndInit();
             ((System.ComponentModel.ISupportInitialize)endf4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)endf1).EndInit();
             ((System.ComponentModel.ISupportInitialize)endnf4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)endf2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)endnf1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)endnf2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endf5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)endnf5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1287,7 +1287,7 @@
         private PictureBox endf2;
         private ComboBox comboBox1;
         private Label label1;
-        private CheckedListBox chlbxfvp;
+        private CheckedListBox chlbxintrs;
         private Button btnBack;
     }
 }
